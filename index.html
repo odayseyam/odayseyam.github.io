@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oday Seyam</title>
+<meta name="description" content="Oday Ahmad Rajab Seyam — ICT graduate, Master's candidate in Leadership & Management, humanitarian operations and digital systems. Gaza, Palestine.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://odayseyam.github.io/">
+<meta property="og:image" content="https://odayseyam.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Oday Seyam, ICT Graduate and MSc Candidate in Leadership and Management">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Oday Seyam | عدي صيام">
+<meta name="twitter:image" content="https://odayseyam.github.io/og.jpg">
+<meta property="og:title" content="Oday Seyam | عدي صيام">
+<meta property="og:description" content="ICT · Leadership & Management · Humanitarian Operations · Digital Systems">
+<meta name="theme-color" content="#070b14">
+<meta name="author" content="Oday Ahmad Rajab Seyam">
+<meta name="keywords" content="Oday Seyam, عدي صيام, Gaza, ICT, Leadership and Management, humanitarian operations, World Central Kitchen, data entry, administration, web developer, digital leadership, agentic AI">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f1b84a'/%3E%3Cstop offset='1' stop-color='%2333d6cf'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='800' font-size='24' text-anchor='middle' fill='%230b0f18'%3EOS%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Oday Ahmad Rajab Seyam","alternateName":["Oday Seyam","عدي صيام"],"email":"mailto:odayseyam@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Gaza","addressCountry":"PS"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Al-Quds Open University"},{"@type":"CollegeOrUniversity","name":"Al-Aqsa University"}],"knowsLanguage":["ar","en"],"jobTitle":"ICT Graduate · MSc Candidate in Leadership and Management","sameAs":["https://www.linkedin.com/in/oday-seyam","https://github.com/odayseyam"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a night sky over Gaza — ink background, gold + sea-teal light; one strong hero with the portrait, then a vertical story told in glowing panels. */
+:root{
+  --bg:#ebe8e2; --bg2:#e1ddd5; --surface:rgba(255,255,255,.74); --surface-solid:#ffffff;
+  --ink:#121826; --muted:#555e6e; --line:rgba(18,24,38,.11);
+  --gold:#94650a; --gold-2:#c18a1c; --teal:#0a7c78; --teal-2:#13a8a2; --rose:#b42a52;
+  --glow-a:rgba(193,138,28,.22); --glow-b:rgba(10,124,120,.16);
+  --shadow:0 18px 50px -24px rgba(60,45,20,.30);
+  --font-display:"Alexandria","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --font-ar-display:"Alexandria","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --font-body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;
+  --r:22px; --maxw:1180px;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#070b14; --bg2:#0b1120; --surface:rgba(16,23,38,.62); --surface-solid:#0f1626;
+  --ink:#eef2f8; --muted:#97a3b8; --line:rgba(238,242,248,.09);
+  --gold:#f1b84a; --gold-2:#ffd27a; --teal:#33d6cf; --teal-2:#7cf2ec; --rose:#ff5c86;
+  --glow-a:rgba(241,184,74,.34); --glow-b:rgba(51,214,207,.28);
+  --shadow:0 30px 80px -30px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.7;overflow-x:hidden;transition:background .5s,color .5s}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:8px}
+h1,h2,h3{text-wrap:balance;line-height:1.2}
+html[lang="ar"] .disp{font-family:var(--font-ar-display)}
+.disp{font-family:var(--font-display)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- background ---------- */
+#sky{position:fixed;inset:0;z-index:-2;width:100%;height:100%}
+.aurora{position:fixed;inset:-20%;z-index:-3;pointer-events:none;filter:blur(80px);opacity:.9}
+.aurora i{position:absolute;border-radius:50%;animation:drift 22s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:46vw;height:46vw;background:var(--glow-a);top:5%;left:8%}
+.aurora i:nth-child(2){width:40vw;height:40vw;background:var(--glow-b);top:35%;right:5%;animation-duration:26s;animation-delay:-6s}
+.aurora i:nth-child(3){width:30vw;height:30vw;background:var(--glow-b);bottom:0;left:30%;animation-duration:30s;animation-delay:-12s;opacity:.6}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(6vw,-4vw) scale(1.15)}100%{transform:translate(-5vw,5vw) scale(.92)}}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+#cursor{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,var(--glow-a) 0%,transparent 65%);transform:translate(-50%,-50%);opacity:0;transition:opacity .4s}
+#progress{position:fixed;top:0;inset-inline:0;height:3px;z-index:100;background:linear-gradient(90deg,var(--teal),var(--gold));transform-origin:0 50%;transform:scaleX(0)}
+html[dir="rtl"] #progress{transform-origin:100% 50%}
+
+/* ---------- preloader ---------- */
+#loader{position:fixed;inset:0;z-index:200;background:var(--bg);display:grid;place-items:center;transition:opacity .6s,visibility .6s}
+#loader.done{opacity:0;visibility:hidden}
+#loader svg{width:120px;height:120px}
+#loader text{font-family:var(--font-display);font-weight:800;font-size:44px;fill:none;stroke:var(--gold);stroke-width:1.4;stroke-dasharray:240;stroke-dashoffset:240;animation:draw 1.1s ease forwards}
+#loader circle{fill:none;stroke:var(--teal);stroke-width:1.5;stroke-dasharray:380;stroke-dashoffset:380;animation:draw 1.2s .1s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:14px;inset-inline:0;z-index:90;display:flex;justify-content:center;padding:0 16px;transition:transform .4s}
+.nav.hide{transform:translateY(-120%)}
+.nav-in{width:min(var(--maxw),100%);display:flex;align-items:center;gap:14px;padding:10px 12px 10px 18px;border-radius:999px;background:var(--surface);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid var(--line);box-shadow:var(--shadow)}
+html[dir="rtl"] .nav-in{padding:10px 18px 10px 12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;white-space:nowrap}
+.brand b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;font-family:var(--font-display);font-size:14px;color:#0b0f18;background:conic-gradient(from 200deg,var(--gold),var(--teal),var(--gold))}
+.links{display:flex;gap:4px;margin-inline:auto}
+.links a{padding:7px 12px;border-radius:999px;font-size:14px;color:var(--muted);transition:color .25s,background .25s}
+.links a:hover,.links a.on{color:var(--ink);background:var(--line)}
+.tools{display:flex;gap:8px;align-items:center}
+.lang{display:flex;padding:3px;border-radius:999px;background:var(--line);position:relative}
+.lang button{position:relative;z-index:1;width:38px;height:30px;border-radius:999px;font-size:12px;font-weight:600;color:var(--muted);transition:color .3s}
+.lang button.on{color:#0b0f18}
+.lang .pill{position:absolute;top:3px;height:30px;width:38px;border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--gold-2));transition:left .45s cubic-bezier(.7,0,.2,1);box-shadow:0 0 18px var(--glow-a)}
+.icon-btn{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--line);transition:transform .3s,background .3s}
+.icon-btn:hover{transform:rotate(18deg) scale(1.06)}
+.icon-btn svg{width:18px;height:18px}
+.menu-btn{display:none}
+@media (max-width:980px){
+  .links{position:fixed;top:78px;inset-inline:16px;flex-direction:column;padding:12px;border-radius:20px;background:var(--surface-solid);border:1px solid var(--line);box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(-10px);transition:.3s}
+  .links.open{opacity:1;pointer-events:auto;transform:none}
+  .links a{padding:12px 14px;font-size:16px}
+  .menu-btn{display:grid}
+  .tools{margin-inline-start:auto}
+}
+@media (max-width:420px){.brand span{display:none}.lang button{width:34px}.lang .pill{width:34px}}
+
+/* ---------- layout ---------- */
+main{position:relative}
+section{padding:110px 20px;position:relative}
+.wrap{width:min(var(--maxw),100%);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+html[lang="ar"] .eyebrow{letter-spacing:0;font-size:14px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.sec-head{display:grid;gap:14px;margin-bottom:54px;max-width:760px}
+.sec-head h2{font-size:clamp(32px,5vw,56px);font-weight:700}
+.sec-head p{color:var(--muted);font-size:17px;max-width:62ch}
+.grad{background:linear-gradient(100deg,var(--gold) 10%,var(--gold-2) 40%,var(--teal) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.panel{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow);overflow:hidden}
+.panel.spot::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(500px circle at var(--mx,50%) var(--my,50%),var(--glow-a),transparent 45%);opacity:0;transition:opacity .4s}
+.panel.spot:hover::before{opacity:.6}
+.panel.spot::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),var(--gold),transparent 45%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s}
+.panel.spot:hover::after{opacity:1}
+
+/* reveal: elements stay visible at rest; motion only adds polish */
+.rv{transition:transform 1s cubic-bezier(.2,.7,.1,1),opacity 1s}
+.js .rv:not(.in){transform:translateY(34px);opacity:.25}
+
+/* ---------- hero ---------- */
+.hero{padding:150px 20px 80px;min-height:auto}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;grid-template-areas:"top stage" "bot stage";column-gap:60px;align-items:center}
+.h-top{grid-area:top;align-self:end}.h-bot{grid-area:bot;align-self:start}.stage{grid-area:stage}
+.loc{display:inline-flex;gap:10px;align-items:center;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:13px;color:var(--muted)}
+.loc .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 var(--teal);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 var(--glow-b)}100%{box-shadow:0 0 0 14px transparent}}
+.hello{margin-top:26px;font-size:20px;color:var(--muted)}
+.name{font-size:clamp(46px,8vw,104px);font-weight:800;line-height:1.02;margin-top:6px;letter-spacing:-.02em}
+html[lang="ar"] .name{letter-spacing:0;line-height:1.25}
+.name .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
+.name .w > span{display:inline-block;animation:rise 1.1s cubic-bezier(.2,.8,.1,1) both}
+.name .w:nth-child(2) > span{animation-delay:.12s}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.fullname{margin-top:8px;color:var(--muted);font-size:15px}
+.role{margin-top:22px;font-size:clamp(20px,2.6vw,28px);font-weight:500;min-height:1.6em}
+.role .tw{color:var(--gold)}
+.role .caret{display:inline-block;width:2px;height:1em;background:var(--teal);margin-inline-start:4px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{margin-top:18px;max-width:58ch;color:var(--muted);font-size:17px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .3s,box-shadow .3s;will-change:transform}
+.btn svg{width:18px;height:18px}
+.btn.pri{color:#0b0f18;background:linear-gradient(135deg,var(--gold),var(--gold-2));box-shadow:0 10px 40px -8px var(--glow-a)}
+.btn.pri::after{content:"";position:absolute;inset:-2px;border-radius:inherit;background:inherit;filter:blur(18px);opacity:.5;z-index:-1}
+.btn.sec{border:1px solid var(--line);background:var(--surface)}
+.btn:hover{box-shadow:0 14px 50px -10px var(--glow-a)}
+html[dir="rtl"] .btn .arr{transform:scaleX(-1)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px}
+.stat{padding:18px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface)}
+.stat b{display:block;font-family:var(--font-display);font-size:32px;font-weight:700;line-height:1;color:var(--ink)}
+.stat b i{font-style:normal;color:var(--gold)}
+.stat > span{display:block;margin-top:8px;font-size:13px;color:var(--muted);line-height:1.45}
+
+.stage{position:relative;justify-self:center;width:min(470px,100%);aspect-ratio:820/965;isolation:isolate}
+.stage .orb{position:absolute;left:50%;top:44%;width:92%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 50% 45%,var(--glow-a),transparent 62%),radial-gradient(circle at 30% 70%,var(--glow-b),transparent 60%);filter:blur(10px);animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{50%{transform:translate(-50%,-50%) scale(1.08);opacity:.8}}
+.orbit{position:absolute;left:50%;top:40%;border-radius:50%;border:1px dashed var(--line);transform:translate(-50%,-50%)}
+.orbit.o1{width:104%;aspect-ratio:1;animation:rot 40s linear infinite}
+.orbit.o2{width:78%;aspect-ratio:1;border-style:solid;border-color:var(--line);animation:rot 28s linear infinite reverse}
+.orbit i{position:absolute;top:-5px;left:50%;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px var(--gold)}
+.orbit.o2 i{background:var(--teal);box-shadow:0 0 16px var(--teal);top:auto;bottom:-5px}
+@keyframes rot{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.arch{position:absolute;inset:24% 10% 3% 10%;border-radius:999px 999px 30px 30px;background:linear-gradient(170deg,rgba(255,255,255,.10),rgba(255,255,255,.02) 40%),radial-gradient(120% 80% at 50% 0%,var(--glow-a),transparent 60%),var(--surface-solid);border:1px solid var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.15);overflow:hidden;-webkit-mask-image:linear-gradient(#000 62%,transparent 96%);mask-image:linear-gradient(#000 62%,transparent 96%)}
+.arch::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--ang,0deg),var(--gold),transparent 25%,var(--teal) 50%,transparent 75%,var(--gold));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 7s linear infinite}
+.arch::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 38px,var(--line) 38px 39px);opacity:.5;mask-image:linear-gradient(transparent,#000 60%)}
+@property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes spin{to{--ang:360deg}}
+.cut{position:absolute;left:0;bottom:0;width:100%;height:auto;z-index:2;-webkit-mask-image:linear-gradient(90deg,transparent 2%,#000 20%,#000 80%,transparent 98%),linear-gradient(#000 74%,transparent 97%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 2%,#000 20%,#000 80%,transparent 98%),linear-gradient(#000 74%,transparent 97%);mask-composite:intersect;transition:transform .25s ease-out}
+.cutwrap{position:absolute;inset:0;z-index:2;filter:drop-shadow(-8px -2px 18px var(--glow-b)) drop-shadow(8px -2px 18px var(--glow-a))}
+.floor{position:absolute;left:10%;right:10%;bottom:-6%;height:14%;border-radius:50%;background:radial-gradient(closest-side,var(--glow-a),transparent);filter:blur(14px);z-index:1}
+.sweep{position:absolute;inset:24% 10% 3% 10%;border-radius:999px 999px 30px 30px;overflow:hidden;z-index:3;pointer-events:none}
+.sweep::before{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-14deg);animation:sweep 6s ease-in-out 1.6s infinite}
+@keyframes sweep{0%{left:-60%}35%,100%{left:130%}}
+.chip-float{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:16px;background:var(--surface);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow);font-size:13px;font-weight:600;white-space:nowrap;animation:bob 5s ease-in-out infinite}
+.chip-float small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.chip-float .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--teal));color:#0b0f18}
+.chip-float .ic svg{width:18px;height:18px}
+.cf1{top:30%;inset-inline-start:-16%}
+.cf2{top:58%;inset-inline-end:-14%;animation-delay:-1.6s}
+.cf3{bottom:6%;inset-inline-start:-8%;animation-delay:-3.2s}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.bigname{position:absolute;inset-inline:0;top:52%;z-index:-1;pointer-events:none;overflow:hidden;white-space:nowrap;text-align:center;font-family:var(--font-display);font-weight:800;font-size:clamp(90px,17vw,280px);line-height:1;color:transparent;-webkit-text-stroke:1px var(--line);opacity:.9;transform:translateY(calc(var(--sy,0) * -0.25px))}
+html[lang="ar"] .bigname{font-family:var(--font-display)}
+.open{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-size:12.5px;font-weight:600;color:#0d7a46;background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.35)}
+:root[data-theme="dark"] .open{color:#5ee59a}
+.open i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:ping 1.8s infinite}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.scroll-hint{display:flex;justify-content:center;margin-top:50px}
+.scroll-hint span{width:26px;height:42px;border:2px solid var(--line);border-radius:14px;position:relative}
+.scroll-hint span::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold);animation:wheel 1.8s infinite}
+@keyframes wheel{to{transform:translateY(14px);opacity:0}}
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;grid-template-areas:"top" "stage" "bot";row-gap:44px}
+  .role{min-height:3.2em}
+  .stage{width:min(340px,84%)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cf1{top:auto;bottom:24%;inset-inline-start:-10%}.cf2{display:none}.cf3{bottom:-4%;inset-inline-start:auto;inset-inline-end:-10%}
+  .chip-float{padding:8px 10px;font-size:12px}.chip-float .ic{width:28px;height:28px}
+}
+
+/* ---------- marquee ---------- */
+.marquee{padding:22px 0;border-block:1px solid var(--line);overflow:hidden;background:var(--surface);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee .track{display:flex;gap:48px;width:max-content;animation:mq 40s linear infinite}
+html[dir="rtl"] .marquee .track{animation-name:mqr}
+.marquee span{display:flex;align-items:center;gap:48px;font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--muted);white-space:nowrap}
+.marquee span::after{content:"✦";color:var(--gold);font-size:16px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes mqr{to{transform:translateX(50%)}}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
+.about-text{padding:38px}
+.about-text p{font-size:18px;color:var(--muted);max-width:64ch}
+.about-text p + p{margin-top:16px}
+.about-text strong{color:var(--ink);font-weight:600}
+.facts{padding:12px 30px;display:grid}
+.fact{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact .ic{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--line);color:var(--gold)}
+.fact .ic svg{width:20px;height:20px}
+.fact small{display:block;color:var(--muted);font-size:13px}
+.fact b{font-weight:600;font-size:15px;word-break:break-word}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}.about-text{padding:26px}}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;display:grid;gap:22px;padding-inline-start:46px}
+.tl .rail{position:absolute;inset-inline-start:15px;top:8px;bottom:8px;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.tl .rail i{position:absolute;inset:0;background:linear-gradient(var(--gold),var(--teal));transform-origin:top;transform:scaleY(var(--p,0));box-shadow:0 0 12px var(--gold)}
+.job{padding:4px 0 26px;border-bottom:1px solid var(--line)}
+.job::before{content:"";position:absolute}
+.job-wrap .node{position:absolute;z-index:2;inset-inline-start:-39px;top:8px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:2px solid var(--gold);box-shadow:0 0 0 5px var(--bg),0 0 18px var(--glow-a)}
+.job-wrap{position:relative}
+.job-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;align-items:baseline}
+.job h3{font-size:20px;font-weight:600}
+.job .org{color:var(--gold);font-weight:600;font-size:15px}
+.job .when{font-size:13px;color:var(--muted);padding:4px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.job ul{margin-top:14px;display:grid;gap:8px;list-style:none}
+.job li{position:relative;padding-inline-start:20px;color:var(--muted);font-size:15.5px}
+.job li::before{content:"";position:absolute;inset-inline-start:2px;top:.72em;width:7px;height:7px;border-radius:2px;background:var(--teal);transform:rotate(45deg)}
+.tag{white-space:nowrap;display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--glow-b);color:var(--ink)}
+.tl-group{margin:40px 0 18px;font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+html[lang="ar"] .tl-group{letter-spacing:0}
+
+/* ---------- projects ---------- */
+.proj{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center;padding:46px;margin-bottom:34px}
+.proj.flip{grid-template-columns:1fr 1.15fr}
+.proj.flip .proj-media{order:2}
+.proj.flip .case{order:3}
+.proj-info h3{font-size:clamp(28px,3.4vw,40px);font-weight:700}
+.proj-info .sub{color:var(--gold);font-weight:600;margin-top:4px}
+.proj-info p{color:var(--muted);margin-top:16px;font-size:16px}
+.feat{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.feat li{display:flex;gap:10px;align-items:flex-start;font-size:15px;padding:10px 12px;border-radius:12px;background:var(--line)}
+.feat li svg{flex:none;width:18px;height:18px;color:var(--teal);margin-top:3px}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.stack span{font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);direction:ltr}
+.proj-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.store{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:14px;background:#0b0f18;color:#fff;border:1px solid rgba(255,255,255,.14);transition:transform .3s,box-shadow .3s;direction:ltr}
+.store:hover{transform:translateY(-3px);box-shadow:0 14px 40px -12px var(--glow-a)}
+.store svg{width:24px;height:24px}
+.store small{display:block;font-size:10px;opacity:.75;line-height:1.1}
+.store b{display:block;font-size:16px;line-height:1.15}
+.store.soon{opacity:.7;cursor:default}
+.store.soon:hover{transform:none;box-shadow:none}
+.note{margin-top:16px;font-size:12.5px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.note svg{width:16px;height:16px;flex:none;color:var(--teal)}
+
+/* laptop */
+.laptop{position:relative;width:100%;perspective:1600px}
+.laptop .lid{position:relative;margin:0 6%;padding:2.2% 2.2% 3%;border-radius:18px 18px 6px 6px;background:linear-gradient(160deg,#2a2f3a,#0d1017);box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 40px 80px -30px rgba(0,0,0,.7);transform:rotateX(6deg);transform-origin:bottom;transition:transform .8s cubic-bezier(.2,.8,.1,1)}
+.laptop:hover .lid{transform:rotateX(0)}
+.laptop .cam{position:absolute;top:.9%;left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#333a46}
+.screen{position:relative;aspect-ratio:16/10;border-radius:6px;overflow:hidden;background:#18151c;cursor:zoom-in}
+.screen .slide,.phone .slide{position:absolute;inset:0;opacity:0;transition:opacity .9s}
+.screen .slide.on,.phone .slide.on{opacity:1}
+.screen .slide img{width:100%;height:auto;transform:translateY(0)}
+.screen::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(255,255,255,.10) 0%,transparent 35%)}
+.laptop .base{position:relative;height:16px;margin:0;border-radius:2px 2px 16px 16px;background:linear-gradient(#c9ced8,#7d8492);box-shadow:0 30px 40px -18px rgba(0,0,0,.6)}
+.laptop .base::before{content:"";position:absolute;top:0;left:42%;right:42%;height:6px;border-radius:0 0 8px 8px;background:#9aa1ad}
+.media-glow{position:absolute;inset:10% 8%;z-index:-1;filter:blur(60px);opacity:.8;background:radial-gradient(circle at 30% 40%,var(--glow-a),transparent 60%),radial-gradient(circle at 70% 60%,var(--glow-b),transparent 60%)}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:22px}
+.dots button{width:8px;height:8px;border-radius:999px;background:var(--line);transition:width .4s,background .4s}
+.dots button.on{width:26px;background:var(--gold)}
+.cap{text-align:center;font-size:13px;color:var(--muted);margin-top:10px;min-height:1.4em}
+
+/* phones */
+.phones{position:relative;display:flex;justify-content:center;align-items:center;gap:0;padding:20px 0;min-height:520px}
+.phone{position:relative;width:230px;aspect-ratio:9/18.6;border-radius:40px;padding:9px;background:linear-gradient(145deg,#3a3f4a,#0b0e14);box-shadow:0 0 0 1px rgba(255,255,255,.12) inset,0 40px 80px -30px rgba(0,0,0,.7);cursor:zoom-in}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:32px;overflow:hidden;background:#f7f2ef}
+.phone .slide img{width:100%;height:100%;object-fit:cover;object-position:top}
+.phone .island{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:74px;height:20px;border-radius:999px;background:#05070b;z-index:3}
+.phone.p1{z-index:2;animation:float1 6s ease-in-out infinite}
+.phone.p2{width:200px;margin-inline-start:-50px;transform:rotate(8deg) translateY(30px);opacity:.92;animation:float2 7s ease-in-out infinite}
+html[dir="rtl"] .phone.p2{transform:rotate(-8deg) translateY(30px)}
+.phone.p2 .island{width:60px;height:16px;top:14px}
+@keyframes float1{50%{transform:translateY(-14px)}}
+@keyframes float2{50%{translate:0 -10px}}
+.phone .os{position:absolute;bottom:-34px;left:0;right:0;text-align:center;font-size:12px;color:var(--muted);font-weight:600;direction:ltr}
+.media-glow.yafa{background:radial-gradient(circle at 40% 40%,var(--glow-a),transparent 60%),radial-gradient(circle at 60% 70%,var(--glow-b),transparent 60%)}
+@media (max-width:980px){
+  .proj,.proj.flip{grid-template-columns:1fr;padding:26px;gap:36px}
+  .proj.flip .proj-media{order:0}
+  .feat{grid-template-columns:1fr}
+}
+@media (max-width:480px){.phone{width:190px}.phone.p2{width:160px;margin-inline-start:-60px}.phones{min-height:430px}}
+
+/* ---------- research ---------- */
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.res{padding:34px;display:flex;flex-direction:column;gap:14px}
+.res canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.res > *:not(canvas){position:relative}
+.res .kind{font-size:13px;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:.1em}
+html[lang="ar"] .res .kind{letter-spacing:0}
+.res h3{font-size:22px;font-weight:600;line-height:1.45}
+.res h3.en{direction:ltr;text-align:start;font-family:var(--font-display)}
+.res p{color:var(--muted);font-size:15px}
+.status{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 7px transparent;opacity:.5}0%{box-shadow:0 0 0 0 var(--glow-a)}}
+.kw{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:8px}
+.kw span{font-size:12px;padding:5px 11px;border-radius:999px;background:var(--line)}
+.res .meta{display:grid;gap:4px;font-size:14px;color:var(--muted)}
+.res .meta b{color:var(--ink);font-weight:600}
+@media (max-width:860px){.res-grid{grid-template-columns:1fr}}
+
+/* ---------- education ---------- */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.edu{padding:32px;display:grid;gap:12px}
+.edu .yr{font-family:var(--font-display);font-size:14px;color:var(--gold);font-weight:700;direction:ltr;text-align:start}
+.edu h3{font-size:22px;font-weight:600}
+.edu .uni{color:var(--muted)}
+.gauge{display:flex;align-items:center;gap:18px;margin-top:8px}
+.gauge svg{width:84px;height:84px;transform:rotate(-90deg)}
+.gauge circle{fill:none;stroke-width:7}
+.gauge .bg{stroke:var(--line)}
+.gauge .fg{stroke:url(#gg);stroke-linecap:round;stroke-dasharray:226;stroke-dashoffset:226;transition:stroke-dashoffset 1.8s cubic-bezier(.2,.8,.1,1)}
+.gauge b{font-family:var(--font-display);font-size:28px}
+.gauge small{display:block;color:var(--muted);font-size:13px}
+.edu-note{font-size:14px;color:var(--muted)}
+@media (max-width:860px){.edu-grid{grid-template-columns:1fr}}
+
+/* ---------- training ---------- */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.cert{position:relative;padding:22px;display:grid;gap:10px;align-content:start;border:1px solid var(--line);border-radius:18px;transition:transform .4s,border-color .4s}
+.cert:hover{border-color:var(--gold)}
+.cert:hover{transform:translateY(-6px)}
+.cert .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--glow-a),var(--glow-b));color:var(--gold)}
+.cert .ic svg{width:22px;height:22px}
+.cert h3{font-size:17px;font-weight:600}
+.cert p{font-size:15px;color:var(--muted)}
+.cert .hrs{font-size:12px;font-weight:600;color:var(--teal)}
+
+/* ---------- skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill{padding:26px}
+.skill h3{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:600}
+.skill h3 .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--line);color:var(--gold)}
+.skill h3 .ic svg{width:19px;height:19px}
+.skill .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.skill .chips span{font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);transition:border-color .3s,color .3s}
+.skill .chips span:hover{border-color:var(--gold);color:var(--gold)}
+.lang-bars{display:grid;gap:16px;margin-top:18px}
+.lb small{display:flex;justify-content:space-between;font-size:14px}
+.lb small em{font-style:normal;color:var(--muted);font-size:13px}
+.lb .bar{height:8px;border-radius:999px;background:var(--line);margin-top:8px;overflow:hidden}
+.lb .bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--teal),var(--gold));width:var(--w);transform-origin:0 50%;transition:transform 1.6s cubic-bezier(.2,.8,.1,1)}
+html[dir="rtl"] .lb .bar i{transform-origin:100% 50%}
+.js .lb:not(.in) .bar i{transform:scaleX(.05)}
+@media (max-width:980px){.skill-grid{grid-template-columns:1fr 1fr}}
+.skill.wide{grid-column:span 2}
+@media (max-width:640px){.skill-grid{grid-template-columns:minmax(0,1fr)}.skill.wide{grid-column:auto}}
+
+/* ---------- contact ---------- */
+.contact{padding:56px;text-align:center;display:grid;justify-items:center;gap:18px}
+.contact h2{font-size:clamp(34px,5.5vw,64px);font-weight:700;max-width:16ch}
+.contact > p{color:var(--muted);max-width:56ch;font-size:17px}
+.c-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:100%;margin-top:18px}
+.c-card{display:grid;justify-items:center;gap:8px;padding:24px 14px;border-radius:18px;border:1px solid var(--line);background:var(--surface);transition:transform .35s,border-color .35s,box-shadow .35s}
+.c-card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 20px 50px -20px var(--glow-a)}
+.c-card .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--teal));color:#0b0f18}
+.c-card .ic svg{width:24px;height:24px}
+.c-card b{font-weight:600}
+.c-card small{color:var(--muted);font-size:13px;direction:ltr;word-break:break-all}
+.copy{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);padding:8px 14px;border-radius:999px;border:1px solid var(--line)}
+.copy:hover{color:var(--ink)}
+.copy svg{width:15px;height:15px}
+@media (max-width:860px){.contact{padding:30px 18px}.c-grid{grid-template-columns:1fr 1fr}}
+
+
+/* ---------- lightbox ---------- */
+#lb{position:fixed;inset:0;z-index:150;display:none;background:rgba(4,6,12,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#lb.open{display:grid;grid-template-rows:auto 1fr auto}
+#lb .lb-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;color:#e8ecf3;font-size:14px}
+#lb .lb-body{overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:0 16px}
+#lb img{max-width:min(1000px,100%);height:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6);animation:zoomIn .4s cubic-bezier(.2,.8,.1,1)}
+#lb.phone-mode img{max-width:min(420px,100%)}
+@keyframes zoomIn{from{transform:scale(.94);opacity:0}}
+#lb .lb-nav{display:flex;justify-content:center;gap:12px;padding:16px}
+#lb button{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;display:grid;place-items:center}
+#lb button:hover{background:rgba(255,255,255,.2)}
+#lb button svg{width:20px;height:20px}
+html[dir="rtl"] #lb .flipx svg{transform:scaleX(-1)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,120px);visibility:hidden;z-index:160;padding:12px 20px;border-radius:999px;background:var(--surface-solid);border:1px solid var(--line);box-shadow:var(--shadow);font-size:14px;transition:transform .4s}
+#toast.show{transform:translate(-50%,0);visibility:visible}
+
+.fade-swap{transition:opacity .25s}
+body.swapping .fade-swap{opacity:0}
+
+/* ---------- statement ---------- */
+.statement{padding:150px 20px 120px}
+.lit{font-size:clamp(28px,4.3vw,58px);font-weight:700;line-height:1.38;max-width:24ch}
+html[lang="ar"] .lit{line-height:1.6}
+.lit span{opacity:.2;transition:opacity .5s,color .5s}
+.lit span.on{opacity:1}
+.lit span.hl.on{color:var(--gold)}
+.lit-meta{margin-top:30px;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:15px}
+.lit-meta img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 12%;background:var(--surface-solid);border:2px solid var(--gold)}
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.svc{padding:36px 34px;display:grid;gap:14px;align-content:start;transition:transform .5s cubic-bezier(.2,.8,.1,1)}
+.svc:hover{transform:translateY(-8px)}
+.svc .n{position:absolute;top:22px;inset-inline-end:28px;font-family:var(--font-display);font-size:64px;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1px var(--line);transition:-webkit-text-stroke-color .4s}
+.svc:hover .n{-webkit-text-stroke-color:var(--gold)}
+.svc .ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--teal));color:#0b0f18;box-shadow:0 12px 30px -10px var(--glow-a)}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:22px;font-weight:600;max-width:20ch}
+.svc p{color:var(--muted);font-size:15.5px}
+.svc .kw{padding-top:4px}
+@media (max-width:860px){.svc-grid{grid-template-columns:1fr}.svc{padding:28px 24px}}
+/* ---------- quote ---------- */
+.quote{padding:60px 64px;display:grid;gap:24px}
+.quote svg.q{width:56px;height:56px;color:var(--gold);opacity:.9}
+.quote blockquote{font-size:clamp(21px,2.6vw,32px);font-weight:500;line-height:1.55;max-width:46ch}
+.quote .src{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:14px}
+.quote .src b{display:block;color:var(--ink);font-size:16px}
+.quote .src .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--line);color:var(--teal);font-family:var(--font-display);font-weight:800;font-size:13px}
+@media (max-width:640px){.quote{padding:32px 24px}}
+/* ---------- form ---------- */
+.cform{width:100%;margin-top:26px;padding:28px;border-radius:20px;border:1px solid var(--line);background:var(--surface);display:grid;gap:14px;text-align:start}
+.cform h3{font-size:18px;font-weight:600}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cform label{display:grid;gap:6px;font-size:13px;color:var(--muted)}
+.cform input,.cform textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none;transition:border-color .3s,box-shadow .3s;width:100%}
+.cform textarea{min-height:120px;resize:vertical}
+.cform input:focus,.cform textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px var(--glow-a)}
+.cform .acts{display:flex;flex-wrap:wrap;gap:12px}
+.btn.wa{color:#fff;background:linear-gradient(135deg,#1fa855,#25d366);box-shadow:0 10px 30px -10px rgba(37,211,102,.6)}
+@media (max-width:640px){.cform .row{grid-template-columns:1fr}.cform{padding:20px}}
+/* ---------- v7 additions ---------- */
+.tagline{margin-top:20px;font-size:clamp(17px,2vw,22px);font-weight:600;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.tagline span{color:var(--ink);transition:color .4s}
+.tagline span.hl{color:var(--gold)}
+.tagline i{width:5px;height:5px;border-radius:50%;background:var(--teal);opacity:.7}
+.cta .btn.ghost{border:1px solid var(--line)}
+.now{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:-26px 0 34px}
+.now b{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.08em}
+html[lang="ar"] .now b{letter-spacing:0;font-size:14px}
+.now b::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);animation:ping 2s infinite}
+.now span{font-size:14px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.pstatus{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;margin-inline-start:8px;color:#0d7a46;background:rgba(34,197,94,.13);border:1px solid rgba(34,197,94,.35)}
+:root[data-theme="dark"] .pstatus{color:#5ee59a}
+.pstatus i{width:7px;height:7px;border-radius:50%;background:#22c55e}
+.vchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.vchips span{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.vchips span::before{content:"✦";color:var(--gold);font-size:10px}
+.store.web{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#0b0f18;border:0}
+.store.web svg{width:22px;height:22px}
+.testi{grid-column:1/-1;display:flex;gap:18px;align-items:flex-start;padding:24px 26px;border-radius:20px;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);background:linear-gradient(135deg,var(--glow-a),transparent 70%)}
+.testi svg{flex:none;width:38px;height:38px;color:var(--gold)}
+.testi blockquote{font-size:17px;line-height:1.7;font-weight:500}
+.testi .who{margin-top:10px;font-size:14px;color:var(--muted)}
+.testi .who b{color:var(--ink)}
+.testi .tr{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.sub-h{margin:80px 0 28px;font-size:clamp(24px,3vw,34px);font-weight:700}
+.skill.ai{grid-column:span 2;background:linear-gradient(135deg,color-mix(in srgb,var(--gold) 14%,var(--surface-solid)),var(--surface-solid) 60%);border-color:color-mix(in srgb,var(--gold) 40%,transparent)}
+.skill.ai p{margin-top:12px;color:var(--muted);font-size:15.5px;max-width:70ch}
+.skill.ai .badge{display:inline-block;margin-top:6px;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--gold);direction:ltr}
+@media (max-width:980px){.skill.ai{grid-column:span 2}}
+@media (max-width:640px){.skill.ai{grid-column:auto}}
+.srv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.srv{display:flex;flex-direction:column;gap:10px;padding:24px 22px;border-radius:20px;border:1px solid var(--line);background:var(--surface);transition:transform .4s,border-color .4s,box-shadow .4s}
+.srv:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 24px 50px -26px var(--glow-a)}
+.srv .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--teal));color:#0b0f18}
+.srv .ic svg{width:22px;height:22px}
+.srv h3{font-size:17px;font-weight:600}
+.srv p{font-size:14.5px;color:var(--muted);flex:1}
+.srv button{align-self:flex-start;font-size:13.5px;font-weight:700;color:var(--gold);padding:6px 0;display:inline-flex;gap:6px;align-items:center}
+.srv button:hover{text-decoration:underline}
+.mode{display:flex;gap:6px;padding:4px;border-radius:999px;background:var(--line);align-self:start;justify-self:start}
+.mode button{padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted)}
+.mode button[aria-pressed="true"]{color:#0b0f18;background:linear-gradient(135deg,var(--gold),var(--gold-2))}
+.cform select{font:inherit;font-size:15px;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+.cform .pj{display:none}
+.cform.project .pj{display:grid}
+.f-updated{opacity:.85}
+
+/* ---------- light theme ---------- */
+:root:not([data-theme="dark"]) .aurora{opacity:.55}
+:root:not([data-theme="dark"]) #sky{opacity:.45}
+:root:not([data-theme="dark"]) .panel{box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 18px 44px -26px rgba(60,45,20,.35)}
+:root:not([data-theme="dark"]) .arch{background:linear-gradient(170deg,#fff,#f3ede2 60%);box-shadow:0 30px 60px -30px rgba(60,45,20,.35)}
+:root:not([data-theme="dark"]) .cutwrap{filter:drop-shadow(0 18px 30px rgba(60,45,20,.25))}
+:root:not([data-theme="dark"]) .grain{opacity:.03}
+/* ---------- footer ---------- */
+.foot{padding:70px 20px 34px;margin-top:40px;border-top:1px solid var(--line);background:linear-gradient(180deg,transparent,var(--bg2))}
+.foot-in{display:grid;grid-template-columns:1.3fr 1fr auto;gap:36px;align-items:start}
+.f-brand{display:flex;gap:14px;align-items:center}
+.f-logo{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;font-family:var(--font-display);font-weight:800;color:#0b0f18;background:conic-gradient(from 200deg,var(--gold),var(--teal),var(--gold));flex:none}
+.foot .sig{font-family:var(--font-display);font-size:20px;color:var(--ink);font-weight:700}
+.f-brand p{color:var(--muted);font-size:14px}
+.f-links{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
+.f-links a{color:var(--muted);font-size:14px;transition:color .3s}
+.f-links a:hover{color:var(--gold)}
+.f-actions{display:grid;gap:12px;justify-items:start}
+.f-icons{display:flex;gap:8px}
+.f-icons a{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line);color:var(--ink);transition:border-color .3s,color .3s,transform .3s}
+.f-icons a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.f-icons svg{width:18px;height:18px}
+.f-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.f-bottom a:hover{color:var(--gold)}
+@media (max-width:860px){.foot-in{grid-template-columns:1fr}.foot{padding-bottom:90px}}
+
+/* ---------- focus tracks ---------- */
+main{display:flex;flex-direction:column}
+.focus{padding:46px 20px 0}
+.focus-in{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;padding:16px 18px;border-radius:22px;border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.focus .ft{font-weight:600;font-size:15px}
+.seg{display:flex;flex-wrap:wrap;gap:6px;padding:4px;border-radius:999px;background:var(--line)}
+.seg button{padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600;color:var(--muted);transition:background .35s,color .35s,box-shadow .35s}
+.seg button[aria-pressed="true"]{color:#0b0f18;background:linear-gradient(135deg,var(--gold),var(--gold-2));box-shadow:0 6px 20px -8px var(--glow-a)}
+.focus .copy{margin-inline-start:auto}
+@media (max-width:640px){.seg{border-radius:18px}.focus .copy{margin-inline-start:0}}
+.job-wrap{transition:opacity .4s}
+.job-wrap.dim .job{opacity:.5}
+.job-wrap.dim ul{display:none}
+.job-wrap.dim .job{padding-bottom:16px}
+.svc.dim{opacity:.5}
+.svc.hot{border-color:color-mix(in srgb,var(--gold) 55%,transparent);box-shadow:0 30px 70px -30px var(--glow-a)}
+.best{position:absolute;top:22px;inset-inline-end:100px;font-size:12px;font-weight:700;color:#0b0f18;background:linear-gradient(135deg,var(--gold),var(--gold-2));padding:4px 10px;border-radius:999px}
+/* ---------- case study ---------- */
+.case{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+.case > div{position:relative;padding:20px 20px 18px;border-radius:18px;border:1px solid var(--line);background:var(--bg2)}
+.case b{display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+html[lang="ar"] .case b{letter-spacing:0;font-size:14px}
+.case b i{display:grid;place-items:center;width:24px;height:24px;border-radius:8px;font-style:normal;font-size:12px;color:#0b0f18;background:linear-gradient(135deg,var(--gold),var(--teal))}
+.case p{font-size:15.5px;line-height:1.65;color:var(--muted);margin:0}
+.case > div:last-child{border-color:color-mix(in srgb,var(--gold) 45%,transparent)}
+.case > div:last-child b{color:var(--gold)}
+@media (max-width:860px){.case{grid-template-columns:1fr}}
+
+/* ---------- nav actions + fab ---------- */
+.nav-cv,.nav-cta{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border-radius:999px;font-size:13.5px;font-weight:600;white-space:nowrap;transition:transform .3s,box-shadow .3s}
+.nav-cv{border:1px solid var(--line);background:var(--line)}
+.nav-cv svg{width:17px;height:17px}
+.nav-cta{color:#0b0f18;background:linear-gradient(135deg,var(--gold),var(--gold-2));box-shadow:0 8px 24px -10px var(--glow-a)}
+.nav-cv:hover,.nav-cta:hover{transform:translateY(-2px)}
+@media (max-width:1180px){.nav-cv span{display:none}.nav-cv{width:38px;padding:0;justify-content:center}}
+@media (max-width:980px){.nav-cta{display:none}}
+.fab{position:fixed;bottom:18px;inset-inline-end:18px;z-index:95;width:56px;height:56px;border-radius:50%;display:none;place-items:center;color:#fff;background:linear-gradient(135deg,#1fa855,#25d366);box-shadow:0 12px 30px -8px rgba(37,211,102,.7)}
+.fab svg{width:28px;height:28px}
+.fab::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(37,211,102,.5);animation:ping 2.4s infinite}
+@media (max-width:980px){.fab{display:grid}}
+/* ---------- roles ---------- */
+.role .tw{display:inline-block;transition:opacity .45s,transform .45s}
+.role .tw.out{opacity:0;transform:translateY(10px)}
+/* ---------- lite mode (weak devices / slow connections) ---------- */
+.lite .aurora i,.lite .orb,.lite .marquee .track,.lite .arch::before,.lite .grad{animation:none}
+.lite .grain,.lite .orbit,.lite .sweep,.lite #cursor{display:none}
+.lite .panel,.lite .nav-in,.lite .chip-float,.lite .stat,.lite .loc,.lite .c-card,.lite .cform{backdrop-filter:none;-webkit-backdrop-filter:none}
+.lite .panel{background:var(--surface-solid)}
+.lite .aurora{filter:blur(50px)}
+.lite .chip-float{animation:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .js .rv:not(.in){transform:none;opacity:1;filter:none}
+}
+</style>
+</head>
+<body>
+<div id="loader" aria-hidden="true"><svg viewBox="0 0 140 140"><circle cx="70" cy="70" r="60"/><text x="70" y="86" text-anchor="middle">OS</text></svg></div>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><b>OS</b><span class="fade-swap" data-i="brand"></span></a>
+    <nav class="links fade-swap" id="links">
+      <a href="#about" data-i="nav_about"></a>
+      <a href="#experience" data-i="nav_exp"></a>
+      <a href="#projects" data-i="nav_proj"></a>
+      <a href="#education" data-i="nav_edu"></a>
+      <a href="#skills" data-i="nav_skills"></a>
+      <a href="#services" data-i="nav_srv"></a>
+      <a href="#contact" data-i="nav_contact"></a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <span class="pill" id="langPill"></span>
+        <button data-lang="ar" aria-label="العربية">ع</button>
+        <button data-lang="en" aria-label="English">EN</button>
+        <button data-lang="fr" aria-label="Français">FR</button>
+      </div>
+      <a class="nav-cv cv-link" href="Oday-Seyam-CV.pdf" download="Oday-Seyam-CV.pdf" target="_blank" rel="noopener" aria-label="CV"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i="nav_cv"></span></a>
+      <a class="nav-cta" href="#contact" data-i="cta1"></a>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+        <svg id="icoSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg id="icoMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" style="order:0">
+  <div class="wrap hero-grid">
+    <div class="h-top fade-swap">
+      <div class="hero-badges"><span class="open"><i></i><span data-i="open"></span></span><span class="loc"><span class="dot"></span><span data-i="loc"></span> · <span class="num" dir="ltr">31.50°N 34.47°E</span></span></div>
+      <p class="hello" data-i="hello"></p>
+      <h1 class="name disp" id="heroName"></h1>
+      <p class="fullname" data-i="fullname"></p>
+      <p class="tagline" id="tagline"></p>
+    </div>
+    <div class="h-bot fade-swap">
+      <p class="lead" data-i="lead" style="margin-top:0"></p>
+      <div class="cta">
+        <a class="btn pri mag" href="#contact" id="heroCta"><span id="heroCtaTxt"></span><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn sec mag" href="#projects"><span data-i="cta2"></span></a>
+        <a class="btn sec ghost mag cv-link" href="Oday-Seyam-CV.pdf" download="Oday-Seyam-CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i="cta_cv"></span></a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="orb"></div>
+      <div class="orbit o1"><i></i></div><div class="orbit o2"><i></i></div>
+      <div class="arch"></div>
+      <div class="floor"></div>
+      <div class="cutwrap"><img class="cut" id="cut" src="img/oday-cut.webp" alt="Oday Seyam" width="820" height="965"></div>
+      <div class="sweep"></div>
+      <div class="chip-float cf1 fade-swap" data-depth="18"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><span><span data-i="cf1a"></span><small data-i="cf1b"></small></span></div>
+      <div class="chip-float cf2 fade-swap" data-depth="26"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><span data-i="cf2a"></span><small data-i="cf2b"></small></span></div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+
+<!-- FOCUS -->
+<section class="focus" id="focus" style="order:2">
+  <div class="wrap fade-swap"><div class="focus-in">
+    <span class="ft" data-i="focus_t"></span>
+    <div class="seg" id="seg" role="group"></div>
+    <button class="copy" id="copyTrack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg><span data-i="copy_link"></span></button>
+  </div></div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" style="order:10">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="about_eb"></span><h2 class="disp" data-i-html="about_h"></h2></div>
+    <div class="now fade-swap" id="now"></div>
+    <div class="about-grid fade-swap">
+      <div class="panel spot about-text rv" data-i-html="about_p"></div>
+      <div class="panel spot facts rv" id="facts"></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas" style="order:11">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="svc_eb"></span><h2 class="disp" data-i-html="svc_h"></h2><p data-i="svc_p"></p></div>
+    <div class="svc-grid fade-swap" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="order:12">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="exp_eb"></span><h2 class="disp" data-i-html="exp_h"></h2><p data-i="exp_p"></p></div>
+    <div class="tl fade-swap" id="tl"><div class="rail"><i id="rail"></i></div></div>
+    <figure class="panel spot quote rv fade-swap" style="margin-top:60px">
+      <svg class="q" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C6 6.4 3.5 9.6 3.5 13.6V19h6.2v-6.2H6.6c0-2.4 1.5-4.4 3.8-5.4zm10 0C16 6.4 13.5 9.6 13.5 13.6V19h6.2v-6.2h-3.1c0-2.4 1.5-4.4 3.8-5.4z"/></svg>
+      <blockquote data-i="q_text"></blockquote>
+      <figcaption class="src"><span class="ic">WCK</span><span><b>World Central Kitchen</b><span data-i="q_src"></span></span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="order:13">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="proj_eb"></span><h2 class="disp" data-i-html="proj_h"></h2><p data-i="proj_p"></p></div>
+
+    <article class="panel proj rv">
+      <div class="proj-media">
+        <div class="laptop" id="laptop">
+          <div class="media-glow"></div>
+          <div class="lid"><span class="cam"></span><div class="screen" id="haibaScreen" role="button" tabindex="0" aria-label="Open gallery"></div></div>
+          <div class="base"></div>
+        </div>
+        <div class="dots" id="haibaDots"></div>
+        <p class="cap fade-swap" id="haibaCap"></p>
+      </div>
+      <div class="proj-info fade-swap">
+        <span class="tag" data-i="h_tag"></span>
+        <h3 class="disp" style="margin-top:12px">AlHaibaPhone <span class="pstatus"><i></i><span data-i="h_status"></span></span></h3>
+        <p class="sub" data-i="h_sub"></p>
+        <p data-i="h_p"></p>
+        <ul class="feat" id="haibaFeat"></ul>
+        <div class="vchips" id="haibaChips"></div>
+        <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-i="h_note"></span></p>
+      </div>
+      <div class="case fade-swap" id="haibaCase"></div>
+      <figure class="testi fade-swap"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C6 6.4 3.5 9.6 3.5 13.6V19h6.2v-6.2H6.6c0-2.4 1.5-4.4 3.8-5.4zm10 0C16 6.4 13.5 9.6 13.5 13.6V19h6.2v-6.2h-3.1c0-2.4 1.5-4.4 3.8-5.4z"/></svg>
+        <div><blockquote id="testiTxt"></blockquote><figcaption class="who"><b data-i="testi_who"></b> · <span data-i="testi_role"></span><span class="tr" id="testiTr"></span></figcaption></div></figure>
+    </article>
+
+    <article class="panel proj flip rv">
+      <div class="proj-media">
+        <div class="phones" id="phones">
+          <div class="media-glow yafa"></div>
+          <div class="phone p1" id="yafaA" role="button" tabindex="0" aria-label="Open gallery"><span class="island"></span><div class="scr"></div><span class="os">iOS</span></div>
+          <div class="phone p2" id="yafaB" role="button" tabindex="0" aria-label="Open gallery"><span class="island"></span><div class="scr"></div><span class="os">Android</span></div>
+        </div>
+        <div class="dots" id="yafaDots" style="margin-top:44px"></div>
+        <p class="cap fade-swap" id="yafaCap"></p>
+      </div>
+      <div class="proj-info fade-swap">
+        <span class="tag" data-i="y_tag"></span>
+        <h3 class="disp" style="margin-top:12px"><span data-i="y_title"></span> <span class="pstatus"><i></i><span data-i="y_status"></span></span></h3>
+        <p class="sub" data-i="y_sub"></p>
+        <p data-i="y_p"></p>
+        <ul class="feat" id="yafaFeat"></ul>
+        <div class="vchips" id="yafaChips"></div>
+        <div class="proj-links" id="yafaLinks"></div>
+      </div>
+      <div class="case fade-swap" id="yafaCase"></div>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="order:14">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="edu_eb"></span><h2 class="disp" data-i-html="edu_h"></h2></div>
+    <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#33d6cf"/><stop offset="1" stop-color="#f1b84a"/></linearGradient></defs></svg>
+    <div class="edu-grid fade-swap">
+      <article class="panel spot edu rv">
+        <span class="yr">2022 — <span data-i="present"></span></span>
+        <h3 data-i="e1_t"></h3>
+        <span class="uni" data-i="e1_u"></span>
+        <div class="gauge"><svg viewBox="0 0 84 84"><circle class="bg" cx="42" cy="42" r="36"/><circle class="fg" cx="42" cy="42" r="36" data-v="81.8"/></svg><div><b class="num" data-count="81.8" data-dec="1">81.8</b><b>%</b><small data-i="e1_g"></small></div></div>
+        <p class="edu-note" data-i="e1_n"></p>
+      </article>
+      <article class="panel spot edu rv">
+        <span class="yr">2018 — 2022</span>
+        <h3 data-i="e2_t"></h3>
+        <span class="uni" data-i="e2_u"></span>
+        <div class="gauge"><svg viewBox="0 0 84 84"><circle class="bg" cx="42" cy="42" r="36"/><circle class="fg" cx="42" cy="42" r="36" data-v="83.79"/></svg><div><b class="num" data-count="83.79" data-dec="2">83.79</b><b>%</b><small data-i="e2_g"></small></div></div>
+        <p class="edu-note" data-i="e2_n"></p>
+      </article>
+    </div>
+    <h3 class="sub-h disp rv fade-swap" data-i="res_sub"></h3>
+    <div class="res-grid fade-swap">
+      <article class="panel spot res rv">
+        <canvas class="net"></canvas>
+        <span class="kind" data-i="r1_kind"></span>
+        <h3 dir="rtl" style="text-align:start;font-family:var(--font-display)">دور القيادة الرقمية في تعزيز الابتكار التنظيمي: دراسة ميدانية في المعاهد الأزهرية – فلسطين</h3>
+        <p data-i="r1_tr"></p>
+        <div class="meta"><span><b data-i="r1_uni"></b></span><span data-i="r1_appr"></span></div>
+        <span class="status"><i></i><span data-i="r1_status"></span></span>
+        <div class="kw" id="kw1"></div>
+      </article>
+      <article class="panel spot res rv">
+        <canvas class="net"></canvas>
+        <span class="kind" data-i="r2_kind"></span>
+        <h3 class="en">How Organizations Govern Agentic AI</h3>
+        <p data-i="r2_p"></p>
+        <span class="status"><i></i><span data-i="r2_status"></span></span>
+        <div class="kw" id="kw2"></div>
+      </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="order:15">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="sk_eb"></span><h2 class="disp" data-i-html="sk_h"></h2></div>
+    <div class="skill-grid fade-swap" id="skillGrid"></div>
+    <h3 class="sub-h disp rv fade-swap" data-i="cert_eb"></h3>
+    <div class="cert-grid fade-swap" id="certs"></div>
+  </div>
+</section>
+
+<!-- SERVICES (freelance) -->
+<section id="services" style="order:16">
+  <div class="wrap">
+    <div class="sec-head rv fade-swap"><span class="eyebrow" data-i="srv_eb"></span><h2 class="disp" data-i-html="srv_h"></h2><p data-i="srv_p"></p></div>
+    <div class="srv-grid fade-swap" id="srvGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="order:17">
+  <div class="wrap">
+    <div class="panel contact rv fade-swap">
+      <span class="eyebrow" data-i="ct_eb"></span>
+      <h2 class="disp" data-i-html="ct_h"></h2>
+      <p data-i="ct_p"></p>
+      <div class="c-grid">
+        <a class="c-card" href="mailto:odayseyam@gmail.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><b data-i="ct_mail"></b><small>odayseyam@gmail.com</small></a>
+        <a class="c-card" href="https://wa.me/972595522655" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></span><b data-i="ct_wa"></b><small>+972 59 552 2655</small></a>
+        <a class="c-card" href="https://www.linkedin.com/in/oday-seyam" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></span><b>LinkedIn</b><small>in/oday-seyam</small></a>
+        <a class="c-card" href="https://github.com/odayseyam" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.7 9.7 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></span><b>GitHub</b><small>odayseyam</small></a>
+      </div>
+      <form class="cform" id="cform" novalidate>
+        <div class="mode" id="fMode" role="group"><button type="button" data-m="msg" aria-pressed="true" data-i="f_m1"></button><button type="button" data-m="project" aria-pressed="false" data-i="f_m2"></button></div>
+        <h3 id="fTitle"></h3>
+        <div class="row">
+          <label for="fName"><span data-i="f_name"></span><input id="fName" autocomplete="name"></label>
+          <label for="fOrg"><span data-i="f_org"></span><input id="fOrg" autocomplete="organization"></label>
+        </div>
+        <div class="row pj">
+          <label for="fType"><span data-i="f_type"></span><select id="fType"></select></label>
+          <label for="fBudget"><span data-i="f_budget"></span><select id="fBudget"></select></label>
+        </div>
+        <label for="fMsg"><span id="fMsgL"></span><textarea id="fMsg"></textarea></label>
+        <div class="acts">
+          <a class="btn wa mag" id="sendWa" href="https://wa.me/972595522655" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span data-i="f_wa"></span></a>
+          <a class="btn sec mag" id="sendMail" href="mailto:odayseyam@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-i="f_mail"></span></a>
+        </div>
+      </form>
+      <button class="copy" id="copyMail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span data-i="ct_copy"></span></button>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot fade-swap">
+  <div class="wrap foot-in">
+    <div class="f-brand"><b class="f-logo">OS</b><div><p class="sig">Oday Seyam · عدي صيام</p><p data-i="foot_tag"></p></div></div>
+    <nav class="f-links" aria-label="Footer">
+      <a href="#about" data-i="nav_about"></a><a href="#experience" data-i="nav_exp"></a>
+      <a href="#projects" data-i="nav_proj"></a><a href="#areas" data-i="svc_eb"></a>
+      <a href="#education" data-i="nav_edu"></a><a href="#skills" data-i="nav_skills"></a>
+      <a href="#services" data-i="nav_srv"></a><a href="#contact" data-i="nav_contact"></a>
+    </nav>
+    <div class="f-actions">
+      <a class="btn pri cv-link" href="Oday-Seyam-CV.pdf" download="Oday-Seyam-CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i="cta_cv"></span></a>
+      <div class="f-icons">
+        <a href="mailto:odayseyam@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a href="https://wa.me/972595522655" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+        <a href="https://www.linkedin.com/in/oday-seyam" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+        <a href="https://github.com/odayseyam" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.7 9.7 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap f-bottom"><span data-i="foot"></span><span class="f-updated" data-i="updated"></span><a href="#top" data-i="back_top"></a></div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Gallery">
+  <div class="lb-top"><span id="lbCap"></span><button id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="lb-body"><img id="lbImg" alt=""></div>
+  <div class="lb-nav"><button id="lbPrev" class="flipx" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 6-6 6 6 6"/></svg></button><button id="lbNext" class="flipx" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></button></div>
+</div>
+<div id="toast" role="status"></div>
+<a class="fab" href="https://wa.me/972595522655" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></a>
+
+<script>
+document.documentElement.classList.add('js');
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const LITE = (()=>{try{const c=navigator.connection||{};
+  return matchMedia('(prefers-reduced-motion: reduce)').matches || c.saveData===true || /(^|-)(2g|3g)$/.test(c.effectiveType||'') ||
+    (navigator.deviceMemory && navigator.deviceMemory<4) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency<=2);}catch(e){return false;}})();
+if(LITE) document.documentElement.classList.add('lite');
+const APP_STORE_URL = ""; // ضع رابط App Store هنا عند توفره
+const PLAY_URL = "https://play.google.com/store/apps/details?id=com.yafagroups.cosmetics";
+const WEB_URL = "https://yafagroups.com/cosmetics/";
+// CV per focus (add track-specific files later, e.g. tech: "Oday-Seyam-CV-Tech.pdf")
+const CV_FILES = {};
+const IMG = {
+ "hb1-dashboard": "img/hb1-dashboard.webp",
+ "hb2-sale": "img/hb2-sale.webp",
+ "hb3-inventory": "img/hb3-inventory.webp",
+ "hb4-repairs": "img/hb4-repairs.webp",
+ "hb5-bookings": "img/hb5-bookings.webp",
+ "hb6-bags": "img/hb6-bags.webp",
+ "hb7-decoration": "img/hb7-decoration.webp",
+ "hb8-finance": "img/hb8-finance.webp",
+ "hb9-reports": "img/hb9-reports.webp",
+ "y1-splash": "img/y1-splash.webp",
+ "y2-shelves": "img/y2-shelves.webp",
+ "y3-shelves2": "img/y3-shelves2.webp",
+ "y4-categories": "img/y4-categories.webp",
+ "y5-cart": "img/y5-cart.webp",
+ "y6-cart-empty": "img/y6-cart-empty.webp"
+};
+
+/* ================= i18n ================= */
+const T = {
+ brand:{ar:"عدي صيام",en:"Oday Seyam",fr:"Oday Seyam"},
+ foot_tag:{ar:"تكنولوجيا المعلومات · القيادة والإدارة · العمل الإنساني · الأنظمة الرقمية",en:"ICT · Leadership & Management · Humanitarian work · Digital systems",fr:"TIC · Leadership & management · Humanitaire · Systèmes numériques"},
+ back_top:{ar:"العودة للأعلى ↑",en:"Back to top ↑",fr:"Retour en haut ↑"},
+ focus_t:{ar:"اعرض ملفي حسب المجال:",en:"View my profile by focus:",fr:"Voir mon profil par domaine :"},
+ tracks:{ar:{all:"الملف الكامل",admin:"الإدارة والعمليات",hum:"العمل الإنساني",research:"البحث العلمي والجامعات",tech:"التقنية والعمل الحر"},en:{all:"Full profile",admin:"Management & Operations",hum:"Humanitarian",research:"Research & Universities",tech:"Tech & Freelance"},fr:{all:"Profil complet",admin:"Management & opérations",hum:"Humanitaire",research:"Recherche & universités",tech:"Tech & freelance"}},
+ copy_link:{ar:"نسخ رابط هذا العرض",en:"Copy link to this view",fr:"Copier le lien de cette vue"},
+ link_copied:{ar:"تم نسخ الرابط",en:"Link copied",fr:"Lien copié"},
+ best:{ar:"الأنسب",en:"Best fit",fr:"Le plus adapté"},
+ nav_cv:{ar:"السيرة الذاتية",en:"CV",fr:"CV"},
+ cta_cv:{ar:"حمّل السيرة الذاتية (PDF)",en:"Download CV (PDF)",fr:"Télécharger le CV (PDF)"},
+ open:{ar:"متاح لفرص عمل جديدة",en:"Open to new opportunities",fr:"Ouvert à de nouvelles opportunités"},
+ stmt:{ar:"من خطوط التوزيع الإنساني في *غزة* إلى أنظمة رقمية تدير *أعمالاً حقيقية*؛ أجمع بين *انضباط الميدان* ودقة الإدارة ومهارات التقنية لأصنع *أثراً يُقاس*.",
+       en:"From humanitarian distribution lines in *Gaza* to digital systems that run *real businesses*, I bring *field discipline*, administrative accuracy and technical skill to work that makes a *measurable difference*.",
+       fr:"Des distributions humanitaires à *Gaza* aux systèmes numériques qui font tourner de *vraies entreprises*, j'apporte la *discipline du terrain*, la rigueur administrative et la compétence technique pour un *impact mesurable*."},
+ stmt_role:{ar:"تكنولوجيا المعلومات · القيادة والإدارة · العمل الإنساني",en:"ICT · Leadership & Management · Humanitarian work",fr:"TIC · Leadership & management · Humanitaire"},
+ svc_eb:{ar:"مجالات الخبرة",en:"Areas of expertise",fr:"Domaines d'expertise"},
+ svc_h:{ar:"أربعة مجالات <span class='grad'>أضيف فيها قيمة</span>",en:"Four areas where <span class='grad'>I add value</span>",fr:"Quatre domaines où <span class='grad'>j'apporte de la valeur</span>"},
+ svc_p:{ar:"خبرة عملية تخدم المنظمات الإنسانية والجامعات والشركات والعملاء.",en:"Hands-on experience for humanitarian organizations, universities, companies and clients.",fr:"Une expérience concrète au service des ONG, des universités, des entreprises et des clients."},
+ q_text:{ar:"«كان نموذجاً في الالتزام والانضباط، وتميّز بأداء المهام الموكلة إليه بكفاءة ومسؤولية، والتعاون مع زملائه بروح الفريق، والالتزام بأنظمة المؤسسة وسياساتها.»",
+         en:"“A model of commitment and discipline, distinguished by carrying out the tasks assigned to him with efficiency and responsibility, cooperating with colleagues in a team spirit, and adhering to the organization's rules and policies.”",
+         fr:"« Un modèle d'engagement et de discipline, qui s'est distingué par l'exécution efficace et responsable des tâches confiées, la coopération avec ses collègues dans un esprit d'équipe et le respect des règles de l'organisation. »"},
+ q_src:{ar:"من شهادة الخبرة الصادرة عن الموارد البشرية · يونيو 2026",en:"From the HR experience certificate · June 2026",fr:"Extrait de l'attestation d'expérience RH · juin 2026"},
+ f_title:{ar:"أرسل رسالة سريعة",en:"Send a quick message",fr:"Envoyer un message rapide"},
+ f_name:{ar:"الاسم",en:"Your name",fr:"Votre nom"},
+ f_org:{ar:"الجهة / المؤسسة",en:"Organization",fr:"Organisation"},
+ f_msg:{ar:"رسالتك",en:"Your message",fr:"Votre message"},
+ f_wa:{ar:"إرسال عبر واتساب",en:"Send on WhatsApp",fr:"Envoyer sur WhatsApp"},
+ f_mail:{ar:"إرسال عبر البريد",en:"Send by email",fr:"Envoyer par e-mail"},
+ f_empty:{ar:"اكتب رسالتك أولاً",en:"Write your message first",fr:"Écrivez d'abord votre message"},
+ f_hi:{ar:"مرحباً عدي،",en:"Hello Oday,",fr:"Bonjour Oday,"},
+ f_from:{ar:"من",en:"From",fr:"De"},
+ nav_about:{ar:"نبذة",en:"About",fr:"À propos"},
+ nav_exp:{ar:"الخبرات",en:"Experience",fr:"Parcours"},
+ nav_proj:{ar:"المشاريع",en:"Projects",fr:"Projets"},
+ nav_res:{ar:"الأبحاث",en:"Research",fr:"Recherche"},
+ nav_edu:{ar:"التعليم",en:"Education",fr:"Formation"},
+ nav_srv:{ar:"الخدمات",en:"Services",fr:"Services"},
+ nav_skills:{ar:"المهارات",en:"Skills",fr:"Compétences"},
+ nav_contact:{ar:"تواصل",en:"Contact",fr:"Contact"},
+ loc:{ar:"غزة، فلسطين",en:"Gaza, Palestine",fr:"Gaza, Palestine"},
+ hello:{ar:"مرحباً، أنا",en:"Hello, I'm",fr:"Bonjour, je suis"},
+ name:{ar:["عدي","صيام"],en:["Oday","Seyam"],fr:["Oday","Seyam"]},
+ fullname:{ar:"عدي أحمد رجب صيام",en:"Oday Ahmad Rajab Seyam",fr:"Oday Ahmad Rajab Seyam"},
+ roles:{ar:["خريج تكنولوجيا المعلومات والاتصالات","باحث ماجستير في القيادة والإدارة","عمليات ميدانية إنسانية","مطوّر أنظمة رقمية للأعمال","إدارة وبيانات وتقارير"],
+        en:["ICT Graduate","MSc Candidate, Leadership & Management","Humanitarian Field Operations","Builder of Digital Business Systems","Administration, Data & Reporting"],
+        fr:["Diplômé en TIC","Candidat au Master, Leadership & Management","Opérations humanitaires de terrain","Concepteur de systèmes numériques","Administration, données et reporting"]},
+ lead:{ar:"أجمع بين الخبرة الإدارية والتشغيلية، والعمل الميداني الإنساني، والدراسة الأكاديمية في القيادة والإدارة، وبناء الحلول الرقمية. أعمل بدقة، وأحافظ على سرية المعلومات، وأحوّل الاحتياجات العملية إلى نتائج ملموسة.",
+       en:"I bring together administrative and operational experience, humanitarian field work, graduate study in leadership and management, and building digital solutions. Accurate, discreet with confidential information, and focused on turning real needs into tangible results.",
+       fr:"J'associe expérience administrative et opérationnelle, travail humanitaire de terrain, études supérieures en leadership et management et conception de solutions numériques. Rigoureux, discret et orienté vers des résultats concrets."},
+ cta1:{ar:"تواصل معي",en:"Get in touch",fr:"Me contacter"},
+ cta2:{ar:"استعرض أعمالي",en:"View my work",fr:"Voir mes travaux"},
+ cta_proj:{ar:"ناقش مشروعك معي",en:"Discuss your project",fr:"Parlons de votre projet"},
+ tagline:{ar:["الإدارة والعمليات","الحلول الرقمية","البحث العلمي"],en:["Management & Operations","Digital Solutions","Research"],fr:["Management & opérations","Solutions numériques","Recherche"]},
+ now_t:{ar:"حالياً",en:"Current focus",fr:"En ce moment"},
+ now:{ar:["إعداد رسالة الماجستير في القيادة الرقمية والابتكار التنظيمي","مراجعة بحثية حول حوكمة الذكاء الاصطناعي الوكيلي","تطوير حلول ومشاريع رقمية"],en:["Writing my Master's thesis on digital leadership and organizational innovation","A research review on governing agentic AI","Building digital solutions and projects"],fr:["Rédaction du mémoire sur le leadership numérique et l'innovation","Revue de recherche sur la gouvernance de l'IA agentique","Conception de solutions numériques"]},
+ h_status:{ar:"قيد الاستخدام الفعلي لدى العميل",en:"In active use by the client",fr:"Utilisé au quotidien par le client"},
+ y_status:{ar:"منشور على App Store وGoogle Play والويب",en:"Live on the App Store, Google Play and the web",fr:"En ligne sur l'App Store, Google Play et le web"},
+ h_chips:{ar:["يعمل بدون إنترنت","مزامنة بين الأجهزة","نسخ احتياطية مشفرة","صافي الربح لكل خدمة","نحو 200 منتج"],en:["Works offline","Syncs across devices","Encrypted backups","Net profit per service","About 200 products"],fr:["Fonctionne hors ligne","Synchronisation multi-appareils","Sauvegardes chiffrées","Bénéfice net par service","Environ 200 produits"]},
+ y_chips:{ar:["iOS وAndroid والويب","شراء بدون حساب","تحديثات الطلب عبر واتساب","فواتير PDF","أكثر من 150 منتجاً"],en:["iOS, Android and web","Checkout with no account","WhatsApp order updates","PDF invoices","150+ products"],fr:["iOS, Android et web","Commande sans compte","Suivi par WhatsApp","Factures PDF","Plus de 150 produits"]},
+ web_try:{ar:"جرّب المتجر على الويب",en:"Try the web store",fr:"Essayer la boutique web"},
+ web_small:{ar:"متجر الويب",en:"Web store",fr:"Boutique web"},
+ testi:"من أفضل المصممين الذين تعاملت معهم! مبدع، صبور، ويستمع لكل ملاحظة باهتمام. حوّل فكرتي المبدئية إلى موقع إلكتروني متكامل يفوق توقعاتي من حيث الجمالية والسرعة. تجربة عمل مريحة جداً وبالتأكيد لن تكون الأخيرة.",
+ testi_tr:{en:"“One of the best designers I have worked with! Creative, patient and attentive to every note. He turned my initial idea into a complete website that exceeded my expectations in beauty and speed. A very comfortable experience, and certainly not the last.”",fr:"« L'un des meilleurs designers avec qui j'ai travaillé ! Créatif, patient et attentif à chaque remarque. Il a transformé mon idée de départ en un site complet qui a dépassé mes attentes en esthétique et en rapidité. Une collaboration très agréable, et certainement pas la dernière. »"},
+ testi_note:{ar:"",en:"Translated from Arabic",fr:"Traduit de l'arabe"},
+ testi_who:{ar:"حسن الأشرم",en:"Hassan Al-Ashram",fr:"Hassan Al-Ashram"},
+ testi_role:{ar:"صاحب محل الهيبة فون",en:"Owner, AlHaiba Phone",fr:"Propriétaire, AlHaiba Phone"},
+ res_sub:{ar:"البحث العلمي",en:"Research",fr:"Recherche"},
+ ai_t:{ar:"الذكاء الاصطناعي والحلول الرقمية",en:"Artificial Intelligence & Digital Solutions",fr:"Intelligence artificielle & solutions numériques"},
+ ai_p:{ar:"توظيف تقنيات الذكاء الاصطناعي في تصميم وتطوير المشاريع الرقمية، وبناء التطبيقات والأنظمة، وتحليل المتطلبات، وتحسين تجربة المستخدم، وأتمتة العمليات، ودعم البحث العلمي وتحليل البيانات. التركيز على تحويل الأفكار والاحتياجات إلى حلول عملية مبتكرة، وتحسين كفاءة العمل وجودة المخرجات.",
+       en:"Applying artificial intelligence to design and develop digital projects, build applications and systems, analyse requirements, improve user experience, automate processes, and support research and data analysis. The focus is on turning ideas and needs into practical, innovative solutions that raise efficiency and output quality.",
+       fr:"Mobiliser l'intelligence artificielle pour concevoir et développer des projets numériques, créer des applications et des systèmes, analyser les besoins, améliorer l'expérience utilisateur, automatiser les processus et appuyer la recherche et l'analyse de données. Objectif : transformer idées et besoins en solutions concrètes et innovantes, plus efficaces et de meilleure qualité."},
+ ai_c:{ar:["تطوير الأنظمة والتطبيقات","تحليل المتطلبات","تجربة المستخدم","أتمتة العمليات","دعم البحث وتحليل البيانات"],en:["Systems & app development","Requirements analysis","User experience","Process automation","Research & data analysis"],fr:["Développement de systèmes et d'applis","Analyse des besoins","Expérience utilisateur","Automatisation","Recherche & analyse de données"]},
+ srv_eb:{ar:"خدمات رقمية",en:"Digital services",fr:"Services numériques"},
+ srv_h:{ar:"عندك فكرة أو مشروع؟ <span class='grad'>نحوّله لحل عملي</span>",en:"Have an idea or a project? <span class='grad'>Let's make it work</span>",fr:"Une idée, un projet ? <span class='grad'>Rendons-le concret</span>"},
+ srv_p:{ar:"خدمات للمحلات والمشاريع والمؤسسات التي تحتاج حلاً رقمياً واضحاً وسهل الاستخدام.",en:"For shops, businesses and organizations that need a clear, easy-to-use digital solution.",fr:"Pour les commerces, projets et organisations qui ont besoin d'une solution numérique claire et simple."},
+ srv_btn:{ar:"اطلب هذه الخدمة",en:"Request this service",fr:"Demander ce service"},
+ f_m1:{ar:"رسالة عامة",en:"General message",fr:"Message général"},
+ f_m2:{ar:"ابدأ مشروعاً",en:"Start a project",fr:"Démarrer un projet"},
+ f_title2:{ar:"أخبرني عن مشروعك",en:"Tell me about your project",fr:"Parlez-moi de votre projet"},
+ f_type:{ar:"نوع المشروع",en:"Project type",fr:"Type de projet"},
+ f_budget:{ar:"الميزانية التقريبية (اختياري)",en:"Approximate budget (optional)",fr:"Budget approximatif (facultatif)"},
+ budgets:{ar:["غير محددة بعد","أقل من 300$","300$ – 1000$","أكثر من 1000$"],en:["Not decided yet","Under $300","$300 – $1,000","Over $1,000"],fr:["Pas encore défini","Moins de 300 $","300 $ – 1 000 $","Plus de 1 000 $"]},
+ other:{ar:"أخرى",en:"Other",fr:"Autre"},
+ f_msg2:{ar:"صف فكرتك واحتياجك باختصار",en:"Describe your idea and needs briefly",fr:"Décrivez brièvement votre idée et vos besoins"},
+ f_lbl_type:{ar:"نوع المشروع",en:"Project type",fr:"Type de projet"},
+ updated:{ar:"آخر تحديث: نوفمبر 2026",en:"Last updated: November 2026",fr:"Dernière mise à jour : novembre 2026"},
+ stats:{ar:[["6","+","سنوات من الخبرة العملية"],["500","+","أسرة عملت معها في مشاريع الإغاثة"],["4","","مخيمات تابعتها ميدانياً مع WCK"],["2","","منتجان رقميان قيد التشغيل"]],
+        en:[["6","+","years of work experience"],["500","+","families reached in relief projects"],["4","","camps followed in the field with WCK"],["2","","live digital products"]],
+        fr:[["6","+","ans d'expérience professionnelle"],["500","+","familles accompagnées en projets de secours"],["4","","camps suivis sur le terrain avec WCK"],["2","","produits numériques en ligne"]]},
+ cf1a:{ar:"ماجستير القيادة والإدارة",en:"MSc Leadership & Mgmt",fr:"Master Leadership & Mgmt"},
+ cf1b:{ar:"جامعة الأقصى",en:"Al-Aqsa University",fr:"Université Al-Aqsa"},
+ cf2a:{ar:"World Central Kitchen",en:"World Central Kitchen",fr:"World Central Kitchen"},
+ cf2b:{ar:"عمليات التوزيع الإنساني",en:"Humanitarian distribution",fr:"Distribution humanitaire"},
+ cf3a:{ar:"أنظمة وتطبيقات",en:"Systems & Apps",fr:"Systèmes & applis"},
+ cf3b:{ar:"ويب · iOS · Android",en:"Web · iOS · Android",fr:"Web · iOS · Android"},
+ marquee:{ar:["القيادة الرقمية","العمل الإنساني","إدارة البيانات","KoboToolbox","Excel المتقدم","أنظمة الأعمال","الدعم الفني","اللوجستيات والمشتريات","التحول الرقمي"],
+          en:["Digital Leadership","Humanitarian Operations","Data Management","KoboToolbox","Advanced Excel","Business Systems","IT Support","Logistics & Procurement","Digital Transformation"],
+          fr:["Leadership numérique","Opérations humanitaires","Gestion des données","KoboToolbox","Excel avancé","Systèmes de gestion","Support informatique","Logistique & achats","Transformation numérique"]},
+ about_eb:{ar:"نبذة عني",en:"About me",fr:"À propos"},
+ about_h:{ar:"من الميدان إلى <span class='grad'>الأنظمة الرقمية</span>",en:"From the field to <span class='grad'>digital systems</span>",fr:"Du terrain aux <span class='grad'>systèmes numériques</span>"},
+ about_p:{ar:"<p>خريج <strong>تكنولوجيا المعلومات والاتصالات</strong> من جامعة القدس المفتوحة، وأنهيت المساقات الدراسية لـ<strong>ماجستير القيادة والإدارة</strong> في جامعة الأقصى، وأعمل الآن على رسالة الماجستير.</p><p>عملت مع <strong>World Central Kitchen</strong> في عمليات التوزيع الإنساني، وأشرفت على ورديات أمنية في مواقع تدعم أنشطة منظمات دولية، وتوليت مهام إدارية ومالية وإدخال بيانات في مراكز تعليمية. أتقن Excel وKoboToolbox وإدارة سجلات المستفيدين والأرشفة الإلكترونية والسجلات السرية.</p><p>إلى جانب ذلك، أصمم وأطوّر أنظمة رقمية لأعمال حقيقية، من نظام إدارة متكامل لمحل هواتف إلى تطبيق متجر منشور على iOS وAndroid والويب، وأوظّف الذكاء الاصطناعي في التصميم والتطوير والأتمتة.</p>",
+          en:"<p>I hold a <strong>BSc in Information and Communication Technology</strong> from Al-Quds Open University, and I have completed the coursework for a <strong>Master's in Leadership and Management</strong> at Al-Aqsa University. I am now writing my thesis.</p><p>I have worked with <strong>World Central Kitchen</strong> in humanitarian distribution, supervised security shifts at sites supporting international agencies, and handled administration, finance records and data entry for education centres. I work confidently with Excel, KoboToolbox, beneficiary records, electronic filing and confidential data.</p><p>I also design and build digital systems for real businesses, from a full management system for a phone shop to a shopping app on iOS, Android and the web, using artificial intelligence in design, development and automation.</p>",
+          fr:"<p>Titulaire d'une <strong>licence en technologies de l'information et de la communication</strong> (Université Al-Quds Open), j'ai terminé les cours du <strong>Master en leadership et management</strong> à l'Université Al-Aqsa et je rédige actuellement mon mémoire.</p><p>J'ai travaillé avec <strong>World Central Kitchen</strong> dans la distribution humanitaire, supervisé des équipes de sécurité sur des sites soutenant des agences internationales, et assuré l'administration, la tenue des registres financiers et la saisie de données pour des centres éducatifs. Je maîtrise Excel, KoboToolbox, les registres de bénéficiaires, l'archivage électronique et les données confidentielles.</p><p>Je conçois aussi des systèmes numériques pour de vraies entreprises, du système de gestion complet d'une boutique de téléphones à une application d'achat sur iOS, Android et le web, en m'appuyant sur l'intelligence artificielle pour la conception, le développement et l'automatisation.</p>"},
+ facts:{ar:[["pin","الموقع","غزة، فلسطين"],["mail","البريد الإلكتروني","odayseyam@gmail.com"],["chat","اللغات","العربية (الأم) · الإنجليزية (تواصل ومراسلات)"],["bolt","الجاهزية","متاح للعمل الميداني والمرن ومهام الطوارئ"]],
+        en:[["pin","Location","Gaza, Palestine"],["mail","Email","odayseyam@gmail.com"],["chat","Languages","Arabic (native) · English (working proficiency)"],["bolt","Availability","Field-based, flexible and emergency assignments"]],
+        fr:[["pin","Localisation","Gaza, Palestine"],["mail","E-mail","odayseyam@gmail.com"],["chat","Langues","Arabe (maternelle) · Anglais (niveau professionnel)"],["bolt","Disponibilité","Missions de terrain, flexibles et d'urgence"]]},
+ exp_eb:{ar:"المسيرة المهنية",en:"Career",fr:"Parcours"},
+ exp_h:{ar:"خبرة صُنعت <span class='grad'>في أصعب الظروف</span>",en:"Experience built <span class='grad'>in hard conditions</span>",fr:"Une expérience forgée <span class='grad'>dans l'exigence</span>"},
+ exp_p:{ar:"من التوزيع الإنساني إلى الإشراف الأمني والإدارة والدعم الفني.",en:"From humanitarian distribution to security supervision, administration and IT support.",fr:"De la distribution humanitaire à la supervision de sécurité, l'administration et le support informatique."},
+ grp_work:{ar:"الخبرة العملية",en:"Professional experience",fr:"Expérience professionnelle"},
+ grp_vol:{ar:"العمل التطوعي",en:"Volunteering",fr:"Bénévolat"},
+ proj_eb:{ar:"أعمال مختارة",en:"Selected work",fr:"Travaux choisis"},
+ proj_h:{ar:"منتجات رقمية <span class='grad'>تعمل الآن</span>",en:"Digital products <span class='grad'>in real use</span>",fr:"Des produits numériques <span class='grad'>en usage réel</span>"},
+ proj_p:{ar:"اضغط على الشاشة لاستعراض الصور بحجم كامل.",en:"Tap a screen to open the full-size gallery.",fr:"Touchez un écran pour ouvrir la galerie en grand."},
+ h_tag:{ar:"نظام ويب · إدارة أعمال",en:"Web system · Business management",fr:"Système web · Gestion d'entreprise"},
+ h_sub:{ar:"نظام إدارة أعمال ذكي",en:"Smart Business Management System",fr:"Système de gestion d'entreprise"},
+ h_p:{ar:"نظام إدارة متكامل لمحل يجمع ثلاثة أنشطة: بيع الجوالات والإكسسوارات وصيانتها، وتأجير حقائب الأعراس، وتزيين سيارات الأعراس. يجمع المبيعات والمصروفات والمخزون والحجوزات والأرباح في منصة واحدة.",
+      en:"A complete management system for a shop with three lines of business: phone and accessory sales with repairs, wedding bag rental, and wedding car decoration. Sales, expenses, stock, bookings and profit live in one platform.",
+      fr:"Un système de gestion complet pour une boutique à trois activités : vente et réparation de téléphones et accessoires, location de sacs de mariage et décoration de voitures de mariage. Ventes, dépenses, stock, réservations et bénéfices sur une seule plateforme."},
+ h_feat:{ar:["مخزون لنحو 200 منتج إضافة للمواد التشغيلية","حجوزات مع المتاح والمتبقي لكل يوم","صافي الربح لكل خدمة بعد مصاريف التشغيل","فواتير وديون وتصدير Excel وPDF","العمل دون إنترنت ومزامنة بين الأجهزة","واجهة عربية حديثة ومتجاوبة"],
+         en:["Stock of ~200 products plus operating supplies","Bookings with daily availability and what remains","Net profit per service after operating costs","Invoices, debts, Excel and PDF export","Works offline with multi-device sync","Modern, responsive Arabic UI"],
+         fr:["Stock d'environ 200 produits et fournitures","Réservations avec disponibilité par jour","Bénéfice net par service après charges","Factures, dettes, export Excel et PDF","Hors connexion, synchronisation multi-appareils","Interface arabe moderne et responsive"]},
+h_case:{ar:["محل واحد بثلاثة أنشطة مختلفة: جوالات وإكسسوارات وصيانة، وتأجير حقائب أعراس، وتزيين سيارات أعراس. صاحب المحل بحاجة يعرف المتاح لكل يوم والربح الحقيقي لكل خدمة.","نظام واحد يجمع المبيعات والمصروفات ومخزون نحو 200 منتج والمواد التشغيلية (مثل الورد وأسلاك الصيانة)، مع حجوزات مرتبطة بالمخزون، ويعمل حتى بدون إنترنت.","صاحب المحل يعرف بنظرة واحدة حجوزات اليوم وكم تبقّى من الحقائب والسلال، وصافي الربح من التأجير والتزيين بعد خصم مصاريف التشغيل. ويدير عبره حالياً الخدمات التي اختارها."],
+        en:["One shop, three lines of business: phones, accessories and repairs; wedding bag rental; wedding car decoration. The owner needed to see daily availability and the real profit of each service.","One system for sales, expenses, a stock of about 200 products and operating supplies (such as flowers and repair wires), with bookings tied to stock, working even offline.","At a glance the owner sees today's bookings, how many bags and baskets remain, and the net profit from rental and decoration after operating costs. He now runs the services he chose through it."],
+        fr:["Une boutique, trois activités : téléphones, accessoires et réparations ; location de sacs de mariage ; décoration de voitures de mariage. Le propriétaire devait voir la disponibilité par jour et le vrai bénéfice de chaque service.","Un seul système pour ventes, dépenses, un stock d'environ 200 produits et les fournitures (fleurs, fils de réparation), avec des réservations liées au stock, même hors connexion.","D'un coup d'œil : réservations du jour, sacs et paniers restants, bénéfice net de la location et de la décoration après charges. Il gère aujourd'hui par ce système les services qu'il a choisis."]},
+ case_l:{ar:["التحدي","الحل","النتيجة"],en:["Challenge","Solution","Result"],fr:["Défi","Solution","Résultat"]},
+ h_note:{ar:"نظام خاص بعميل؛ تم إخفاء أسماء الزبائن وأرقامهم والمبالغ المالية في الصور.",en:"Private client system. Customer names, phone numbers and financial figures are blurred in these screenshots.",fr:"Système privé d'un client : noms, numéros et montants sont floutés sur les captures."},
+ h_caps:{ar:["لوحة التحكم","عملية بيع أو تحصيل","المخزون والموجودات","صيانة الهواتف","سجل الحجوزات","تأجير الحقائب والسلال","حجوزات تزيين الأعراس","الخزنة والمصروفات","تقارير الإدارة"],
+         en:["Dashboard","Sale or collection","Inventory","Phone repairs","Bookings","Bag & basket rental","Wedding decoration bookings","Cash & expenses","Management reports"],
+         fr:["Tableau de bord","Vente ou encaissement","Stock","Réparations","Réservations","Location de sacs et paniers","Réservations de décoration","Caisse et dépenses","Rapports de gestion"]},
+ y_tag:{ar:"تطبيق جوال + متجر ويب",en:"Mobile app + web store",fr:"Appli mobile + boutique web"},
+ y_title:{ar:"يافا للكوزمتكس",en:"Yafa Cosmetics",fr:"Yafa Cosmetics"},
+ y_sub:{ar:"تطبيق متجر لمستحضرات التجميل والعناية والعطور",en:"Beauty, care and fragrance shopping app",fr:"Application d'achat beauté, soins et parfums"},
+ y_p:{ar:"تطبيق ومتجر ويب في نفس الوقت، لمشروع خاص أديره بالشراكة مع زميل. الزبونة تقدر تشتري من صفحة الويب مباشرة بدون ما تنزّل التطبيق، أو تنزّله من App Store وGoogle Play. انطلق بنحو 150 منتجاً والعدد في ازدياد.",
+      en:"An app and a web store in one, for a venture I co-own with a partner. Customers can buy straight from the web page without installing anything, or get the app on the App Store and Google Play. Launched with about 150 products and growing.",
+      fr:"Une application et une boutique web à la fois, pour un projet que je codirige avec un associé. Les clientes achètent directement sur le web sans installation, ou via l'App Store et Google Play. Lancé avec environ 150 produits, catalogue en croissance."},
+ y_case:{ar:["كثير من الزبائن يترددون في تنزيل تطبيق لأول عملية شراء.","تجربة واحدة تعمل كتطبيق على iOS وAndroid وكمتجر ويب: الشراء من المتصفح مباشرة وبدون إنشاء حساب، مع رفع إيصال الدفع وتتبّع الطلب عبر واتساب.","انطلق المتجر بنحو 150 منتجاً والكتالوج يتوسع، والقرار بيد الزبونة: تشتري من الويب أو تنزّل التطبيق."],
+        en:["Many customers hesitate to install an app for a first purchase.","One experience that works as an iOS and Android app and as a web store: buy straight from the browser with no account, upload a payment receipt and track the order on WhatsApp.","Launched with about 150 products and a growing catalogue; each customer chooses to shop on the web or install the app."],
+        fr:["Beaucoup de clientes hésitent à installer une application pour un premier achat.","Une seule expérience, appli iOS/Android et boutique web : achat direct depuis le navigateur sans compte, envoi du reçu et suivi de commande sur WhatsApp.","Lancée avec environ 150 produits, catalogue en croissance ; chaque cliente choisit le web ou l'application."]},
+ y_feat:{ar:["أقسام ورفوف مرتبة وسهلة التصفح","بحث سريع عن المنتجات","سلة منظمة وإتمام طلب مبسّط","رفع إيصال الدفع عند الحاجة","متابعة الطلب وإشعارات واتساب","تنزيل الفاتورة بعد قبول الدفع"],
+         en:["Organized categories and shelves","Fast product search","Clean basket and simple checkout","Payment receipt upload","Order tracking with WhatsApp updates","Invoice download once payment is accepted"],
+         fr:["Rayons et catégories clairs","Recherche rapide de produits","Panier clair et commande simple","Envoi du reçu de paiement","Suivi de commande et alertes WhatsApp","Facture téléchargeable après paiement"]},
+ y_caps:{ar:["شاشة البداية","رفوف المتجر","رفوف العطور والعناية","الأقسام","سلة المشتريات","السلة الفارغة"],
+         en:["Splash screen","Store shelves","Fragrance and care shelves","Categories","Shopping basket","Empty basket"],
+         fr:["Écran d'accueil","Rayons du magasin","Rayons parfums et soins","Catégories","Panier","Panier vide"]},
+ gp_small:{ar:"GET IT ON",en:"GET IT ON",fr:"DISPONIBLE SUR"},
+ as_small:{ar:"Download on the",en:"Download on the",fr:"Télécharger dans l'"},
+ as_soon:{ar:"متوفر على",en:"Available on the",fr:"Disponible sur l'"},
+ res_eb:{ar:"البحث العلمي",en:"Research",fr:"Recherche"},
+ res_h:{ar:"القيادة والإدارة <span class='grad'>في عصر الذكاء الاصطناعي</span>",en:"Leadership and management <span class='grad'>in the age of AI</span>",fr:"Leadership et management <span class='grad'>à l'ère de l'IA</span>"},
+ res_p:{ar:"أبحاث تربط القيادة والتنظيم بالتحول الرقمي.",en:"Research linking leadership and organizations to digital transformation.",fr:"Des travaux qui relient leadership, organisations et transformation numérique."},
+ r1_kind:{ar:"رسالة ماجستير",en:"Master's thesis",fr:"Mémoire de Master"},
+ r1_tr:{ar:"دراسة ميدانية تبحث كيف تسهم القيادة الرقمية في تعزيز الابتكار التنظيمي داخل المعاهد الأزهرية في فلسطين.",en:"The Role of Digital Leadership in Enhancing Organizational Innovation: A Field Study in Al-Azhar Institutes, Palestine.",fr:"Le rôle du leadership numérique dans le renforcement de l'innovation organisationnelle : étude de terrain dans les instituts Al-Azhar, Palestine."},
+ r1_uni:{ar:"جامعة الأقصى · كلية الإدارة والتمويل",en:"Al-Aqsa University · Faculty of Administration and Finance",fr:"Université Al-Aqsa · Faculté d'administration et de finance"},
+ r1_appr:{ar:"اعتُمد العنوان من الجامعة في 14 نوفمبر 2026",en:"Title approved by the university on 14 November 2026",fr:"Sujet approuvé par l'université le 14 novembre 2026"},
+ r1_status:{ar:"قيد الإنجاز",en:"In progress",fr:"En cours"},
+ r1_kw:{ar:["القيادة الرقمية","الابتكار التنظيمي","المؤسسات التعليمية","دراسة ميدانية"],en:["Digital leadership","Organizational innovation","Education institutions","Field study"],fr:["Leadership numérique","Innovation organisationnelle","Établissements éducatifs","Étude de terrain"]},
+ r2_kind:{ar:"مراجعة منهجية للأدلة",en:"Structured evidence review",fr:"Revue structurée des données probantes"},
+ r2_p:{ar:"مراجعة منهجية للأدلة المنشورة حول كيفية حوكمة المؤسسات لأنظمة الذكاء الاصطناعي الوكيلي (Agentic AI) التي تتخذ إجراءات بشكل مستقل.",en:"A structured review of published evidence on how organizations govern agentic AI systems that take actions on their own.",fr:"Une revue structurée des travaux publiés sur la manière dont les organisations gouvernent les systèmes d'IA agentique capables d'agir de façon autonome."},
+ r2_status:{ar:"قيد الإعداد",en:"Manuscript in preparation",fr:"Manuscrit en préparation"},
+ r2_kw:{ar:["الذكاء الاصطناعي الوكيلي","حوكمة الذكاء الاصطناعي","الرقابة المؤسسية","التحول الرقمي"],en:["Agentic AI","AI governance","Organizational oversight","Digital transformation"],fr:["IA agentique","Gouvernance de l'IA","Contrôle organisationnel","Transformation numérique"]},
+ edu_eb:{ar:"التعليم والبحث العلمي",en:"Education & research",fr:"Formation & recherche"},
+ edu_h:{ar:"أساس أكاديمي <span class='grad'>متين</span>",en:"A solid <span class='grad'>academic base</span>",fr:"Une base <span class='grad'>académique solide</span>"},
+ present:{ar:"الآن",en:"present",fr:"aujourd'hui"},
+ e1_t:{ar:"ماجستير القيادة والإدارة",en:"Master of Leadership and Management",fr:"Master en leadership et management"},
+ e1_u:{ar:"جامعة الأقصى · كلية الإدارة والتمويل",en:"Al-Aqsa University · Faculty of Administration and Finance",fr:"Université Al-Aqsa · Faculté d'administration et de finance"},
+ e1_g:{ar:"معدل المساقات (30 ساعة معتمدة)",en:"Coursework average (30 credits)",fr:"Moyenne des cours (30 crédits)"},
+ e1_n:{ar:"أُنجزت المساقات الدراسية كاملة، والعمل جارٍ على رسالة الماجستير.",en:"All coursework completed; thesis in progress. Degree not yet awarded.",fr:"Cours entièrement validés ; mémoire en cours. Diplôme pas encore délivré."},
+ e2_t:{ar:"بكالوريوس تكنولوجيا المعلومات والاتصالات",en:"BSc in Information and Communication Technology",fr:"Licence en technologies de l'information et de la communication"},
+ e2_u:{ar:"جامعة القدس المفتوحة",en:"Al-Quds Open University",fr:"Université Al-Quds Open"},
+ e2_g:{ar:"المعدل التراكمي · تقدير جيد جداً",en:"Cumulative average · Very Good",fr:"Moyenne cumulée · Très bien"},
+ e2_n:{ar:"مُنحت الدرجة عام 2022.",en:"Degree awarded in 2022.",fr:"Diplôme obtenu en 2022."},
+ cert_eb:{ar:"التدريب والشهادات",en:"Training & certificates",fr:"Formations & certificats"},
+ cert_h:{ar:"تعلّم <span class='grad'>مستمر</span>",en:"Always <span class='grad'>learning</span>",fr:"Apprendre <span class='grad'>en continu</span>"},
+ sk_eb:{ar:"المهارات والشهادات",en:"Skills & certifications",fr:"Compétences & certifications"},
+ sk_h:{ar:"ما الذي <span class='grad'>أقدّمه</span>",en:"What I <span class='grad'>bring</span>",fr:"Ce que <span class='grad'>j'apporte</span>"},
+ ct_eb:{ar:"تواصل",en:"Contact",fr:"Contact"},
+ ct_h:{ar:"لنعمل <span class='grad'>معاً</span>",en:"Let's <span class='grad'>work together</span>",fr:"Travaillons <span class='grad'>ensemble</span>"},
+ ct_p:{ar:"منفتح على فرص العمل مع المؤسسات والمنظمات والجامعات والشركات، وعلى المشاريع الرقمية للعملاء. اكتب لي رسالة أو ابدأ مشروعاً.",en:"Open to roles with organizations, NGOs, universities and companies, and to digital projects for clients. Send a message or start a project.",fr:"Ouvert aux postes en organisations, ONG, universités et entreprises, ainsi qu'aux projets numériques pour des clients. Écrivez-moi ou démarrez un projet."},
+ ct_mail:{ar:"البريد الإلكتروني",en:"Email",fr:"E-mail"},
+ ct_wa:{ar:"واتساب",en:"WhatsApp",fr:"WhatsApp"},
+ ct_copy:{ar:"نسخ البريد الإلكتروني",en:"Copy email address",fr:"Copier l'adresse e-mail"},
+ copied:{ar:"تم نسخ البريد الإلكتروني",en:"Email address copied",fr:"Adresse e-mail copiée"},
+ refs:{ar:"المراجع متوفرة عند الطلب",en:"References available on request",fr:"Références disponibles sur demande"},
+ foot:{ar:"© 2026 عدي صيام · غزة، فلسطين · المراجع متوفرة عند الطلب",en:"© 2026 Oday Seyam · Gaza, Palestine · References available on request",fr:"© 2026 Oday Seyam · Gaza, Palestine · Références sur demande"},
+};
+
+const JOBS = [
+ {g:"work",t:{ar:"عامل تحميل وتوزيع (متعاقد)",en:"Distro Loader (Contractor)",fr:"Agent de chargement – Distribution (contractuel)"},o:"World Central Kitchen",
+  d:{ar:"يناير 2026 – مايو 2026",en:"Jan 2026 – May 2026",fr:"janv. 2026 – mai 2026"},tag:{ar:"شهادة خبرة",en:"Certified",fr:"Attestation"},
+  tr:["hum"],
+  b:{ar:["متابعة 4 مخيمات يضم كل منها نحو 80 إلى 120 أسرة، عبر زيارات ميدانية مستمرة وإيصال المساعدات ومتابعة الاحتياجات.","تقييم مدى كفاية كميات الطعام لكل مخيم، ورفع الحاجة إلى الزيادة أو التخفيض.","إعداد التقارير الميدانية عن التوزيع والنواقص والتأخيرات، والتنسيق مع الفرق وجهات الاتصال المجتمعية.","تجهيز وتحميل مواد التوزيع الغذائي ومساندة السائقين وفرق التوزيع."],
+     en:["Followed up 4 camps of about 80–120 families each through regular field visits, aid delivery and needs follow-up.","Assessed whether food quantities met each camp's needs and reported where increases or reductions were required.","Wrote field reports on distribution, shortages and delays; coordinated with teams and community contacts.","Prepared and loaded food-distribution materials and supported drivers and distribution teams."],
+     fr:["Suivi de 4 camps d'environ 80 à 120 familles chacun : visites régulières, livraison de l'aide et suivi des besoins.","Évaluation de l'adéquation des quantités de nourriture par camp et signalement des hausses ou baisses nécessaires.","Rapports de terrain sur la distribution, les pénuries et les retards ; coordination avec les équipes et les contacts communautaires.","Préparation et chargement du matériel de distribution ; appui aux chauffeurs et aux équipes."]}},
+ {g:"work",t:{ar:"حارس أمن ومشرف وردية",en:"Security Guard & Shift Supervisor",fr:"Agent de sécurité et chef d'équipe"},o:{ar:"شركة النسور للخدمات الأمنية",en:"Al-Nusour Security Services",fr:"Al-Nusour Security Services"},
+  d:{ar:"أكتوبر 2024 – يناير 2026",en:"Oct 2024 – Jan 2026",fr:"oct. 2024 – janv. 2026"},tr:["hum"],
+  b:{ar:["الإشراف على وردية من ستة أفراد: توزيع المهام ومتابعة التغطية وتنسيق التسليم بين الورديات.","ضبط الدخول والتحقق من الهويات وتوثيق حركة الموظفين والزوار والمركبات.","إعداد تقارير الحوادث وملاحظات الورديات في مواقع تدعم أنشطة منظمة الصحة العالمية وبرنامج الأغذية العالمي وقرية الأيتام."],
+     en:["Supervised a six-person shift: assigned duties, monitored coverage and coordinated handovers.","Controlled site access, verified identities and kept staff, visitor and vehicle logs.","Wrote incident reports and shift notes at sites supporting WHO, WFP and Orphans Village activities."],
+     fr:["Supervision d'une équipe de six agents : affectation des tâches, suivi de la couverture et coordination des relèves.","Contrôle des accès, vérification des identités et registres du personnel, des visiteurs et des véhicules.","Rapports d'incidents et notes de service sur des sites soutenant les activités de l'OMS, du PAM et d'Orphans Village."]}},
+ {g:"work",t:{ar:"موظف إداري وإدخال بيانات",en:"Administrative & Data Entry Staff",fr:"Agent administratif et de saisie"},o:"Quick Way Center",
+  d:{ar:"سبتمبر 2022 – أكتوبر 2023",en:"Sep 2022 – Oct 2023",fr:"sept. 2022 – oct. 2023"},tr:["admin"],
+  b:{ar:["إدارة العمليات الإدارية والمالية لمركز يضم نحو 16 معلماً وموظفاً.","متابعة الحسابات وسجلات الرواتب والدفعات والفواتير والمصروفات.","إعداد الملخصات المالية الشهرية وتنظيم الجداول والمراسلات والملفات الإلكترونية."],
+     en:["Handled administrative and financial operations for a centre of about 16 teachers and office staff.","Maintained accounts, payroll and salary records; followed up payments, invoices and expenses.","Prepared monthly financial summaries and organized schedules, correspondence and electronic files."],
+     fr:["Gestion des opérations administratives et financières d'un centre d'environ 16 enseignants et employés.","Tenue des comptes, de la paie et des salaires ; suivi des paiements, factures et dépenses.","Synthèses financières mensuelles ; organisation des plannings, de la correspondance et des archives."]}},
+ {g:"work",t:{ar:"موظف إداري ومدخل بيانات",en:"Administrative & Data Entry Clerk",fr:"Agent administratif et de saisie"},o:{ar:"مركز الصخرة التعليمي",en:"Al-Sakhra Educational Centre",fr:"Centre éducatif Al-Sakhra"},
+  d:{ar:"نوفمبر 2021 – يوليو 2022",en:"Nov 2021 – Jul 2022",fr:"nov. 2021 – juil. 2022"},tr:["admin"],
+  b:{ar:["إدخال بيانات تسجيل الطلبة والحضور والجداول وتدقيقها وتحديثها، وحفظ السجلات وإعداد التقارير الدورية."],
+     en:["Entered, checked and updated student registration, attendance and scheduling data; kept records and prepared routine reports."],
+     fr:["Saisie, vérification et mise à jour des inscriptions, présences et plannings ; tenue des dossiers et rapports courants."]}},
+ {g:"work",t:{ar:"سكرتير ومساعد إداري",en:"Secretary & Administrative Assistant",fr:"Secrétaire et assistant administratif"},o:{ar:"مركز المبدع التعليمي",en:"Al-Mubdi Educational Center",fr:"Centre éducatif Al-Mubdi"},
+  d:{ar:"أبريل 2021 – أكتوبر 2021",en:"Apr 2021 – Oct 2021",fr:"avr. 2021 – oct. 2021"},tr:["admin"],
+  b:{ar:["متابعة سجلات التسجيل والحضور والجداول، ودعم المراسلات والأرشفة ومتابعة سجلات الدفع."],
+     en:["Kept registration, attendance and office records; supported correspondence, filing and payment follow-up."],
+     fr:["Registres d'inscription et de présence ; correspondance, classement et suivi des paiements."]}},
+ {g:"work",t:{ar:"فني صيانة حاسوب وشبكات",en:"IT & Network Maintenance Technician",fr:"Technicien informatique et réseaux"},o:{ar:"مجمع كمال عدوان الطبي",en:"Kamal Adwan Medical Complex",fr:"Complexe médical Kamal Adwan"},
+  d:{ar:"فبراير 2020 – أغسطس 2020",en:"Feb 2020 – Aug 2020",fr:"févr. 2020 – août 2020"},tr:["tech"],
+  b:{ar:["صيانة الحواسيب ومعدات الشبكة، ومعالجة مشكلات الاتصال والخوادم، ودعم المستخدمين وتوثيق أعمال الصيانة."],
+     en:["Maintained computers and network equipment, troubleshot connectivity and server issues, supported users and documented maintenance."],
+     fr:["Maintenance des ordinateurs et équipements réseau, dépannage de connectivité et serveurs, support utilisateurs et suivi des interventions."]}},
+ {g:"vol",t:{ar:"متطوع إغاثة إنسانية",en:"Humanitarian Relief Volunteer",fr:"Bénévole en aide humanitaire"},o:{ar:"المركز الفلسطيني للاتصال الإنساني (فتا)",en:"Palestinian Humanitarian Communication Center (FATA)",fr:"Centre palestinien de communication humanitaire (FATA)"},
+  d:{ar:"ديسمبر 2019 – أكتوبر 2023",en:"Dec 2019 – Oct 2023",fr:"déc. 2019 – oct. 2023"},tr:["hum","admin"],
+  b:{ar:["العمل مع أكثر من 500 أسرة ضمن مشاريع إغاثية متعددة، وجمع بياناتها وتدقيقها ميدانياً عبر KoboToolbox وتنظيم السجلات وتحديثها على Excel.","دعم التقييمات الميدانية والتحقق من الحالات والتواصل المباشر مع الأسر.","المساهمة في تنظيم التوزيعات الإنسانية، ومنها توزيع حقائب مدرسية للأطفال، مع الحفاظ على سرية بيانات المستفيدين."],
+     en:["Worked with 500+ families across project-based relief programmes; collected and verified household data on field visits using KoboToolbox and organized records in Excel.","Supported field assessments, case verification and direct communication with families.","Helped organize humanitarian distributions, including school bags for children, while keeping beneficiary data confidential."],
+     fr:["Accompagnement de plus de 500 familles dans plusieurs projets de secours ; collecte et vérification des données via KoboToolbox, registres sous Excel.","Appui aux évaluations de terrain, à la vérification des cas et au contact direct avec les familles.","Organisation de distributions humanitaires, dont des cartables pour enfants, dans le respect de la confidentialité."]}},
+];
+
+const CERTS = [
+ {i:"grid",t:{ar:"Microsoft Excel المتقدم",en:"Advanced Microsoft Excel",fr:"Microsoft Excel avancé"},p:{ar:"مركز البيانات للتدريب والتطوير · يونيو 2021",en:"Data Center for Training and Development · June 2021",fr:"Data Center for Training and Development · juin 2021"},h:{ar:"30 ساعة تدريبية",en:"30 training hours",fr:"30 heures"}},
+ {i:"cpu",t:{ar:"الرخصة الدولية لقيادة الحاسوب ICDL",en:"International Computer Driving Licence (ICDL)",fr:"Permis de conduire informatique international (ICDL)"},p:{ar:"المركز الثقافي العثماني / IHH · يناير – فبراير 2022",en:"Ottoman Cultural Center / IHH · Jan – Feb 2022",fr:"Centre culturel ottoman / IHH · janv. – févr. 2022"},h:{ar:"40 ساعة تدريبية",en:"40 training hours",fr:"40 heures"}},
+ {i:"truck",t:{ar:"إدارة اللوجستيات والمشتريات",en:"Logistics and Procurement Management",fr:"Gestion de la logistique et des achats"},p:{ar:"مركز غزة للتدريب والتطوير · فبراير – مايو 2023",en:"Gaza Training and Development Center · Feb – May 2023",fr:"Gaza Training and Development Center · févr. – mai 2023"},h:{ar:"سلاسل الإمداد · تقييم الموردين · ضبط المخزون · العقود",en:"Supply chains · Supplier assessment · Inventory control · Contracts",fr:"Chaînes d'approvisionnement · Fournisseurs · Stocks · Contrats"}},
+ {i:"chart",t:{ar:"التسويق الرقمي والتجارة الإلكترونية",en:"Digital Marketing and E-commerce",fr:"Marketing digital et e-commerce"},p:{ar:"Seo Pro · سبتمبر – أكتوبر 2021",en:"Seo Pro · Sep – Oct 2021",fr:"Seo Pro · sept. – oct. 2021"},h:{ar:"24 ساعة تدريبية",en:"24 training hours",fr:"24 heures"}},
+ {i:"chat",t:{ar:"اللغة الإنجليزية – المستوى 12",en:"Proficiency English – Level 12",fr:"Anglais – niveau 12"},p:{ar:"معهد BBC",en:"BBC Institute",fr:"BBC Institute"},h:{ar:"الدرجة النهائية 85% (B)",en:"Final grade 85% (B)",fr:"Note finale 85 % (B)"}},
+ {i:"form",t:{ar:"جمع البيانات باستخدام KoboToolbox",en:"Data Collection Using KoboToolbox",fr:"Collecte de données avec KoboToolbox"},p:{ar:"إلى جانب تدريب تطوير الذات والمهارات المهنية وAdobe Photoshop",en:"Plus Self-Development & Professional Skills and Adobe Photoshop",fr:"Ainsi que développement personnel et Adobe Photoshop"},h:{ar:"تدريب إضافي",en:"Additional training",fr:"Formation complémentaire"}},
+];
+
+const SKILLS = [
+ {i:"db",t:{ar:"البيانات",en:"Data",fr:"Données"},c:{ar:["جمع البيانات","التدقيق والتحقق","إدخال وتحديث السجلات","بيانات المستفيدين","جداول Excel","KoboToolbox"],en:["Data collection","Verification","Record entry & updating","Beneficiary information","Excel tables","KoboToolbox forms"],fr:["Collecte de données","Vérification","Saisie et mise à jour","Données bénéficiaires","Tableaux Excel","KoboToolbox"]}},
+ {i:"office",t:{ar:"التطبيقات المكتبية والرقمية",en:"Office & digital tools",fr:"Bureautique & outils numériques"},c:{ar:["Excel","Word","PowerPoint","الأنظمة السحابية","Adobe Photoshop"],en:["Excel","Word","PowerPoint","Cloud-based systems","Adobe Photoshop"],fr:["Excel","Word","PowerPoint","Systèmes cloud","Adobe Photoshop"]}},
+ {i:"folder",t:{ar:"الإدارة",en:"Administration",fr:"Administration"},c:{ar:["الأرشفة","ضبط الوثائق","المراسلات","الجداول والمواعيد","متابعة المهام"],en:["Filing","Document control","Correspondence","Schedules & meetings","Task follow-up"],fr:["Classement","Gestion documentaire","Correspondance","Plannings & réunions","Suivi des tâches"]}},
+ {i:"coin",t:{ar:"السجلات المالية",en:"Financial records",fr:"Registres financiers"},c:{ar:["الرواتب","الفواتير","الدفعات","المصروفات","الملخصات الشهرية"],en:["Payroll","Invoices","Payments","Expenses","Monthly summaries"],fr:["Paie","Factures","Paiements","Dépenses","Synthèses mensuelles"]}},
+ {i:"truck",t:{ar:"العمليات واللوجستيات",en:"Operations & logistics",fr:"Opérations & logistique"},c:{ar:["دعم التوزيع","التنسيق الميداني","سجلات المخزون","الجرد","الإشراف على الفرق"],en:["Distribution support","Field coordination","Inventory records","Stocktaking","Team supervision"],fr:["Appui à la distribution","Coordination terrain","Registres de stock","Inventaire","Supervision d'équipe"]}},
+ {i:"code",t:{ar:"التقنية والويب",en:"Tech & web",fr:"Technique & web"},c:{ar:["صيانة الحاسوب والشبكات","الدعم الفني","تطبيقات الويب","Cloudflare Workers / D1","تطبيقات iOS وAndroid"],en:["Computer & network maintenance","IT support","Web applications","Cloudflare Workers / D1","iOS & Android apps"],fr:["Maintenance PC & réseaux","Support informatique","Applications web","Cloudflare Workers / D1","Applis iOS & Android"]}},
+];
+const SERVICES = [
+ {tr:"hum",i:"users",t:{ar:"العمليات الإنسانية والميدانية",en:"Humanitarian & field operations",fr:"Opérations humanitaires et de terrain"},
+  p:{ar:"دعم التوزيع والتنسيق الميداني، وجمع بيانات المستفيدين والتحقق منها، ورفع تقارير دقيقة وسريعة من الميدان.",en:"Distribution support and field coordination, beneficiary data collection and verification, and fast, accurate reporting from the field.",fr:"Appui à la distribution et coordination terrain, collecte et vérification des données bénéficiaires, rapports rapides et précis."},
+  k:{ar:["KoboToolbox","التحقق من الحالات","التقارير الميدانية"],en:["KoboToolbox","Case verification","Field reporting"],fr:["KoboToolbox","Vérification des cas","Rapports terrain"]}},
+ {tr:"admin",i:"db",t:{ar:"الإدارة وإدارة البيانات",en:"Administration & data management",fr:"Administration et gestion des données"},
+  p:{ar:"تنظيم السجلات والأرشفة الإلكترونية، وإدخال البيانات بجودة عالية، وإعداد تقارير Excel والسجلات المالية والرواتب.",en:"Records and electronic filing, high-quality data entry, Excel reporting, financial records and payroll.",fr:"Registres et archivage électronique, saisie de qualité, reporting Excel, registres financiers et paie."},
+  k:{ar:["Excel المتقدم","الأرشفة","السجلات المالية"],en:["Advanced Excel","Filing","Financial records"],fr:["Excel avancé","Archivage","Registres financiers"]}},
+ {tr:"tech",i:"code",t:{ar:"الأنظمة والتطبيقات الرقمية",en:"Digital systems & apps",fr:"Systèmes et applications numériques"},
+  p:{ar:"تحويل العمل الورقي إلى أنظمة رقمية: أنظمة إدارة أعمال، وتطبيقات ويب، وتطبيقات متاجر على iOS وAndroid.",en:"Turning paper workflows into digital systems: business management systems, web apps and store apps on iOS and Android.",fr:"Numériser les processus papier : systèmes de gestion, applications web et applis de vente sur iOS et Android."},
+  k:{ar:["تطبيقات الويب","iOS / Android","Cloudflare"],en:["Web apps","iOS / Android","Cloudflare"],fr:["Applis web","iOS / Android","Cloudflare"]}},
+ {tr:"research",i:"chart",t:{ar:"البحث والقيادة الرقمية",en:"Research & digital leadership",fr:"Recherche et leadership numérique"},
+  p:{ar:"دراسات في القيادة الرقمية والابتكار التنظيمي وحوكمة الذكاء الاصطناعي، تساعد المؤسسات على التحول الرقمي بثقة.",en:"Studies in digital leadership, organizational innovation and AI governance that help organizations go digital with confidence.",fr:"Travaux sur le leadership numérique, l'innovation organisationnelle et la gouvernance de l'IA pour une transformation sereine."},
+  k:{ar:["القيادة الرقمية","حوكمة الذكاء الاصطناعي","الدراسات الميدانية"],en:["Digital leadership","AI governance","Field studies"],fr:["Leadership numérique","Gouvernance de l'IA","Études de terrain"]}},
+];
+const FREELANCE = [
+ {i:"globe",t:{ar:"تطوير مواقع الويب",en:"Website development",fr:"Création de sites web"},p:{ar:"مواقع تعريفية ومتاجر وصفحات هبوط سريعة ومتجاوبة بأكثر من لغة.",en:"Fast, responsive company sites, stores and landing pages in more than one language.",fr:"Sites vitrines, boutiques et pages d'atterrissage rapides et multilingues."}},
+ {i:"phone",t:{ar:"تطبيقات الجوال والمتاجر الإلكترونية",en:"Mobile apps & online stores",fr:"Applis mobiles & boutiques en ligne"},p:{ar:"تطبيقات iOS وAndroid ومتاجر ويب، مثل يافا للكوزمتكس.",en:"iOS and Android apps and web stores, like Yafa Cosmetics.",fr:"Applis iOS et Android et boutiques web, comme Yafa Cosmetics."}},
+ {i:"grid",t:{ar:"أنظمة إدارة الأعمال",en:"Business management systems",fr:"Systèmes de gestion"},p:{ar:"مبيعات ومخزون وحجوزات وتقارير أرباح، مثل نظام الهيبة فون.",en:"Sales, stock, bookings and profit reports, like the AlHaiba Phone system.",fr:"Ventes, stock, réservations et rapports de bénéfice, comme AlHaiba Phone."}},
+ {i:"bolt",t:{ar:"أتمتة العمليات",en:"Process automation",fr:"Automatisation des processus"},p:{ar:"تحويل المهام اليدوية المتكررة إلى خطوات مؤتمتة توفّر الوقت وتقلل الأخطاء.",en:"Turning repetitive manual tasks into automated steps that save time and reduce errors.",fr:"Transformer les tâches manuelles répétitives en étapes automatisées, plus rapides et plus fiables."}},
+ {i:"chart",t:{ar:"تنظيم البيانات والتقارير الرقمية",en:"Data organization & digital reports",fr:"Organisation des données & rapports"},p:{ar:"تحويل السجلات الورقية والجداول المبعثرة إلى بيانات منظمة وتقارير واضحة.",en:"Turning paper records and scattered sheets into organized data and clear reports.",fr:"Transformer registres papier et tableaux épars en données structurées et rapports clairs."}},
+];
+const LANGS = {ar:[["العربية","اللغة الأم",100],["الإنجليزية","تواصل ومراسلات · BBC مستوى 12",72]],en:[["Arabic","Native",100],["English","Working proficiency · BBC Level 12",72]],fr:[["Arabe","Langue maternelle",100],["Anglais","Niveau professionnel · BBC niveau 12",72]]};
+const SOFT = {ar:["السرية","دقة التقارير","التواصل","العمل الجماعي","العمل تحت الضغط","التكيّف مع الظروف الميدانية"],en:["Confidentiality","Accurate reporting","Communication","Teamwork","Working under pressure","Adapting to field conditions"],fr:["Confidentialité","Rapports précis","Communication","Travail d'équipe","Gestion de la pression","Adaptation au terrain"]};
+const SK_EXTRA = {lang:{ar:"اللغات",en:"Languages",fr:"Langues"},soft:{ar:"الممارسة المهنية",en:"Professional practice",fr:"Savoir-être"}};
+
+const ICONS = {
+ pin:'<path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+ mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+ chat:'<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/>',
+ bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+ laptop:'<rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/>',
+ grid:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/>',
+ cpu:'<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
+ truck:'<path d="M3 6h11v9H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>',
+ chart:'<path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/>',
+ form:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>',
+ db:'<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+ office:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/>',
+ folder:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+ coin:'<circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .9-3 2s1.3 1.7 3 2 3 .9 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v2M12 16v2"/>',
+ code:'<path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/>',
+ globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+ users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-3.5 3.2-5.5 6.5-5.5s6 2 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.5c2.7.2 4.6 2 5 5"/>',
+ phone:'<rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18.5h2"/>',
+ spark:'<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
+ check:'<path d="m5 12 4.5 4.5L19 7"/>'
+};
+const svg = (k,w=2)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round">${ICONS[k]}</svg>`;
+const L = v => (typeof v==='string'?v:v[lang]);
+
+/* ================= state ================= */
+const HASH=(location.hash||'').slice(1).toLowerCase().split('-');
+const TRACKS=['all','admin','hum','research','tech'];
+let track = TRACKS.find(t=>HASH.includes(t)) || 'all';
+const ORDER = {all:['about','areas','experience','projects','education','skills','services','contact'],
+  admin:['experience','skills','areas','about','education','projects','services','contact'],
+  hum:['experience','areas','about','skills','education','projects','services','contact'],
+  research:['education','about','experience','skills','areas','projects','services','contact'],
+  tech:['projects','services','skills','experience','about','areas','education','contact']};
+const TAG_HL = {all:-1,admin:0,hum:0,research:2,tech:1};
+function detectLang(){
+  const h=HASH.find(x=>['ar','en','fr'].includes(x)); if(h) return h;
+  try{ const s=localStorage.getItem('os-lang'); if(s) return s; }catch(e){}
+  const l=((navigator.languages&&navigator.languages[0])||navigator.language||'ar').toLowerCase();
+  return l.startsWith('ar')?'ar':l.startsWith('fr')?'fr':'en';
+}
+let lang = detectLang();
+const root = document.documentElement;
+let theme = root.getAttribute('data-theme') || 'dark';
+try{ const t = localStorage.getItem('os-theme'); if(t) theme = t; }catch(e){}
+root.setAttribute('data-theme',theme);
+
+/* ================= render ================= */
+function render(){
+  root.lang = lang; root.dir = lang==='ar'?'rtl':'ltr';
+  document.title = lang==='ar' ? 'عدي صيام | Oday Seyam' : 'Oday Seyam | '+(lang==='fr'?'Portfolio':'Portfolio');
+  document.querySelectorAll('[data-i]').forEach(el=>{const v=T[el.dataset.i]; if(v) el.textContent=v[lang];});
+  document.querySelectorAll('[data-i-html]').forEach(el=>{const v=T[el.dataset.iHtml]; if(v) el.innerHTML=v[lang];});
+  const [n1,n2]=T.name[lang];
+  document.getElementById('heroName').innerHTML = `<span class="w"><span>${n1}</span></span> <span class="w"><span class="grad">${n2}</span></span>`;
+  document.getElementById('svcGrid').innerHTML = SERVICES.map((v,k)=>`<article class="panel spot svc rv${track==='all'||!v.tr?'':v.tr===track?' hot':' dim'}"><span class="n">0${k+1}</span>${track!=='all'&&v.tr===track?`<span class="best">${T.best[lang]}</span>`:''}<span class="ic">${svg(v.i)}</span><h3>${L(v.t)}</h3><p>${L(v.p)}</p><div class="kw">${v.k[lang].map(x=>`<span>${x}</span>`).join('')}</div></article>`).join('');
+  litUpdate();
+  document.getElementById('stats').innerHTML = T.stats[lang].map(s=>`<div class="stat rv"><b class="num"><span data-count="${s[0]}">${s[0]}</span><i>${s[1]}</i></b><span>${s[2]}</span></div>`).join('');
+  document.getElementById('facts').innerHTML = T.facts[lang].map(f=>`<div class="fact"><span class="ic">${svg(f[0])}</span><div><small>${f[1]}</small><b ${f[0]==='mail'?'dir="ltr"':''}>${f[2]}</b></div></div>`).join('');
+  // timeline
+  const tl=document.getElementById('tl'); tl.querySelectorAll('.job-wrap,.tl-group').forEach(e=>e.remove());
+  let html='', g='';
+  JOBS.forEach(j=>{
+    if(j.g!==g){g=j.g; html+=`<p class="tl-group">${T[g==='work'?'grp_work':'grp_vol'][lang]}</p>`;}
+    html+=`<div class="job-wrap rv${track==='all'||track==='research'||(j.tr||[]).includes(track)?'':' dim'}"><span class="node"></span><article class="job">
+      <div class="job-top"><div><h3>${L(j.t)}</h3><span class="org">${L(j.o)}</span>${j.tag?` <span class="tag">${svg('check',3)}${L(j.tag)}</span>`:''}</div><span class="when num">${L(j.d)}</span></div>
+      <ul>${j.b[lang].map(x=>`<li>${x}</li>`).join('')}</ul></article></div>`;
+  });
+  tl.insertAdjacentHTML('beforeend',html);
+  // projects
+  const caseHTML=c=>c[lang].map((x,k)=>`<div><b><i>${k+1}</i>${T.case_l[lang][k]}</b><p>${x}</p></div>`).join('');
+  document.getElementById('haibaCase').innerHTML = caseHTML(T.h_case);
+  document.getElementById('haibaChips').innerHTML = T.h_chips[lang].map(x=>`<span>${x}</span>`).join('');
+  document.getElementById('yafaChips').innerHTML = T.y_chips[lang].map(x=>`<span>${x}</span>`).join('');
+  document.getElementById('testiTxt').textContent = lang==='ar' ? '«'+T.testi+'»' : T.testi_tr[lang];
+  document.getElementById('testiTr').textContent = T.testi_note[lang];
+  document.getElementById('now').innerHTML = `<b>${T.now_t[lang]}</b>`+T.now[lang].map(x=>`<span>${x}</span>`).join('');
+  document.getElementById('srvGrid').innerHTML = FREELANCE.map((v,k)=>`<article class="srv rv"><span class="ic">${svg(v.i)}</span><h3>${L(v.t)}</h3><p>${L(v.p)}</p><button type="button" data-srv="${k}">${T.srv_btn[lang]} <span aria-hidden="true">${lang==='ar'?'←':'→'}</span></button></article>`).join('');
+  document.querySelectorAll('[data-srv]').forEach(b=>b.onclick=()=>requestService(+b.dataset.srv));
+  document.getElementById('fType').innerHTML = FREELANCE.map((v,k)=>`<option value="${k}">${L(v.t)}</option>`).join('')+`<option value="other">${T.other[lang]}</option>`;
+  document.getElementById('fBudget').innerHTML = T.budgets[lang].map((b,k)=>`<option value="${k}">${b}</option>`).join('');
+  document.querySelectorAll('#fMode button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===fmode));
+  setFormMode(fmode);
+  HAIBA.forEach((k,i)=>{const im=document.querySelectorAll('#haibaScreen img')[i]; if(im) im.alt='AlHaibaPhone – '+T.h_caps[lang][i];});
+  YAFA.forEach((k,i)=>{document.querySelectorAll('#yafaA img')[i] && (document.querySelectorAll('#yafaA img')[i].alt='Yafa Cosmetics – '+T.y_caps[lang][i]);});
+  document.getElementById('yafaCase').innerHTML = caseHTML(T.y_case);
+  document.getElementById('seg').innerHTML = TRACKS.map(t=>`<button data-track="${t}" aria-pressed="${t===track}">${T.tracks[lang][t]}</button>`).join('');
+  document.querySelectorAll('#seg button').forEach(b=>b.onclick=()=>setTrack(b.dataset.track));
+  ORDER[track].forEach((id,k)=>{const el=document.getElementById(id); if(el) el.style.order=10+k;});
+  document.getElementById('haibaFeat').innerHTML = T.h_feat[lang].map(x=>`<li>${svg('check',2.4)}<span>${x}</span></li>`).join('');
+  document.getElementById('yafaFeat').innerHTML = T.y_feat[lang].map(x=>`<li>${svg('check',2.4)}<span>${x}</span></li>`).join('');
+  const apple='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8A4.7 4.7 0 0 0 4.2 9.5c-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8s1.9.8 3.2.8 2.1-1.2 2.9-2.4c.9-1.3 1.3-2.6 1.3-2.7 0 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg>';
+  const play='<svg viewBox="0 0 24 24"><path fill="#34d399" d="M3.6 2.3 13.3 12l-9.7 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1z"/><path fill="#60a5fa" d="m16.6 15.3-3.3-3.3 3.3-3.3 3.8 2.2c1.1.6 1.1 1.6 0 2.2z"/><path fill="#f87171" d="M13.3 12 3.6 21.7c.3.2.8.2 1.2 0l11.8-6.4z"/><path fill="#fbbf24" d="M13.3 12 3.6 2.3c.3-.2.8-.2 1.2 0l11.8 6.4z"/></svg>';
+  const webico='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>';
+  document.getElementById('yafaLinks').innerHTML = `<a class="store web" href="${WEB_URL}" target="_blank" rel="noopener">${webico}<span><small>${T.web_small[lang]}</small><b>${T.web_try[lang]}</b></span></a>` +
+    (APP_STORE_URL ? `<a class="store" href="${APP_STORE_URL}" target="_blank" rel="noopener">${apple}<span><small>${T.as_small[lang]}</small><b>App Store</b></span></a>`
+                   : `<span class="store soon" title="App Store">${apple}<span><small>${T.as_soon[lang]}</small><b>App Store</b></span></span>`) +
+    `<a class="store" href="${PLAY_URL}" target="_blank" rel="noopener">${play}<span><small>${T.gp_small[lang]}</small><b>Google Play</b></span></a>`;
+  document.getElementById('kw1').innerHTML = T.r1_kw[lang].map(x=>`<span>${x}</span>`).join('');
+  document.getElementById('kw2').innerHTML = T.r2_kw[lang].map(x=>`<span>${x}</span>`).join('');
+  document.getElementById('certs').innerHTML = CERTS.map(c=>`<article class="cert rv"><span class="ic">${svg(c.i)}</span><h3>${L(c.t)}</h3><p>${L(c.p)}</p><span class="hrs">${L(c.h)}</span></article>`).join('');
+  document.getElementById('skillGrid').innerHTML = `<article class="panel spot skill ai rv"><h3><span class="ic">${svg('spark')}</span>${T.ai_t[lang]}</h3>${lang==='en'?'':'<span class="badge">Artificial Intelligence &amp; Digital Solutions</span>'}<p>${T.ai_p[lang]}</p><div class="chips">${T.ai_c[lang].map(x=>`<span>${x}</span>`).join('')}</div></article>` + SKILLS.map(s=>`<article class="panel spot skill rv"><h3><span class="ic">${svg(s.i)}</span>${L(s.t)}</h3><div class="chips">${s.c[lang].map(x=>`<span>${x}</span>`).join('')}</div></article>`).join('')
+    + `<article class="panel spot skill rv"><h3><span class="ic">${svg('globe')}</span>${SK_EXTRA.lang[lang]}</h3><div class="lang-bars">${LANGS[lang].map(l=>`<div class="lb rv"><small><span>${l[0]}</span><em>${l[1]}</em></small><div class="bar"><i style="--w:${l[2]}%"></i></div></div>`).join('')}</div></article>`
+    + `<article class="panel spot skill wide rv"><h3><span class="ic">${svg('users')}</span>${SK_EXTRA.soft[lang]}</h3><div class="chips">${SOFT[lang].map(x=>`<span>${x}</span>`).join('')}</div></article>`;
+  // buttons
+  document.querySelectorAll('.lang button').forEach((b,i)=>b.classList.toggle('on',b.dataset.lang===lang));
+  positionPill();
+  updateCaps();
+  bindDynamic();
+  observeAll();
+  startTyping();
+}
+function positionPill(){
+  const on=document.querySelector('.lang button.on'), pill=document.getElementById('langPill'), wrap=on.parentElement;
+  pill.style.left = (on.offsetLeft)+'px'; pill.style.transform='none';
+}
+
+/* ================= typing ================= */
+let twTimer;
+function startTyping(){
+  const t=T.tagline[lang], h=TAG_HL[track];
+  document.getElementById('tagline').innerHTML=t.map((x,k)=>(k?'<i></i>':'')+`<span class="${k===h?'hl':''}">${x}</span>`).join('');
+  document.getElementById('heroCtaTxt').textContent = track==='tech'?T.cta_proj[lang]:T.cta1[lang];
+}
+
+/* ================= reveal + counters ================= */
+let io;
+function countUp(el){
+  if(el.dataset.done) return; el.dataset.done=1;
+  const end=parseFloat(el.dataset.count), dec=+(el.dataset.dec||0), t0=performance.now(), dur=1600;
+  (function f(t){const p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,4); el.textContent=(end*e).toFixed(dec); if(p<1) requestAnimationFrame(f);})(t0);
+}
+function observeAll(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));return;}
+  io = io || new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const t=e.target; t.classList.add('in');
+    t.querySelectorAll('[data-count]').forEach(countUp);
+    t.querySelectorAll('.gauge .fg').forEach(c=>{ if(c.dataset.done) return; c.dataset.done=1; const f=226*(1-parseFloat(c.dataset.v)/100); c.style.transition='none'; c.style.strokeDashoffset=226; c.getBoundingClientRect(); c.style.transition=''; c.style.strokeDashoffset=f; });
+    io.unobserve(t);
+  }),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv:not(.in)').forEach((e,k)=>{ e.style.transitionDelay = (e.classList.contains('stat')||e.classList.contains('cert')||e.classList.contains('skill')?(k%4)*90:0)+'ms'; io.observe(e); });
+  // already-revealed containers: re-run counters inside after rerender
+  document.querySelectorAll('.rv.in [data-count]').forEach(countUp);
+  // safety net: never leave content dimmed
+  setTimeout(()=>document.querySelectorAll('.rv:not(.in)').forEach(e=>{const r=e.getBoundingClientRect(); if(r.top<innerHeight*1.2){e.classList.add('in');e.querySelectorAll('[data-count]').forEach(countUp);}}),2500);
+}
+
+/* ================= spotlight + tilt ================= */
+function bindDynamic(){
+  document.querySelectorAll('.panel.spot').forEach(p=>{
+    if(p._b) return; p._b=1;
+    p.addEventListener('pointermove',e=>{const r=p.getBoundingClientRect(); p.style.setProperty('--mx',(e.clientX-r.left)+'px'); p.style.setProperty('--my',(e.clientY-r.top)+'px');});
+  });
+}
+const fine = matchMedia('(pointer:fine)').matches && !RM && !LITE;
+if(fine){
+  const cur=document.getElementById('cursor');
+  addEventListener('pointermove',e=>{cur.style.opacity=1; cur.style.left=e.clientX+'px'; cur.style.top=e.clientY+'px';},{passive:true});
+  const hero=document.querySelector('.hero'), cutEl=document.getElementById('cut'), chips=[...document.querySelectorAll('.chip-float')];
+  hero.addEventListener('pointermove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;
+    cutEl.style.transform=`translate(${x*-10}px,${y*-6}px)`;
+    chips.forEach(c=>c.style.translate=`${x*c.dataset.depth}px ${y*c.dataset.depth}px`);});
+  hero.addEventListener('pointerleave',()=>{cutEl.style.transform='';chips.forEach(c=>c.style.translate='');});
+
+  document.querySelectorAll('.mag').forEach(b=>{
+    b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect(); b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`;});
+    b.addEventListener('pointerleave',()=>b.style.transform='');
+  });
+}
+
+/* ================= galleries ================= */
+const HAIBA = ['hb1-dashboard','hb2-sale','hb3-inventory','hb4-repairs','hb5-bookings','hb6-bags','hb7-decoration','hb8-finance','hb9-reports'];
+const YAFA = ['y1-splash','y2-shelves','y3-shelves2','y4-categories','y5-cart','y6-cart-empty'];
+function buildSlides(container,list,cls){ container.innerHTML = list.map((k,i)=>`<div class="slide${i?'':' on'}"><img src="${IMG[k]}" alt="" decoding="async"></div>`).join(''); }
+const hs=document.getElementById('haibaScreen'); buildSlides(hs,HAIBA);
+const yA=document.querySelector('#yafaA .scr'), yB=document.querySelector('#yafaB .scr');
+buildSlides(yA,YAFA); buildSlides(yB,[...YAFA.slice(1),YAFA[0]]);
+let hi=0, yi=0, hT, yT;
+function dots(id,n,cb){const d=document.getElementById(id); d.innerHTML=Array.from({length:n},(_,i)=>`<button aria-label="${i+1}"></button>`).join(''); d.querySelectorAll('button').forEach((b,i)=>b.onclick=()=>cb(i));}
+dots('haibaDots',HAIBA.length,i=>showHaiba(i,true));
+dots('yafaDots',YAFA.length,i=>showYafa(i,true));
+function updateCaps(){
+  document.getElementById('haibaCap').textContent = T.h_caps[lang][hi];
+  document.getElementById('yafaCap').textContent = T.y_caps[lang][yi];
+}
+
+function showHaiba(i,manual){
+  clearTimeout(hT); hi=i;
+  const slides=hs.querySelectorAll('.slide');
+  slides.forEach((s,k)=>{s.classList.toggle('on',k===i); const im=s.querySelector('img'); im.style.transition='none'; im.style.transform='translateY(0)';});
+  document.querySelectorAll('#haibaDots button').forEach((b,k)=>b.classList.toggle('on',k===i));
+  updateCaps();
+  const im=slides[i].querySelector('img');
+  const go=()=>{
+    const delta=Math.max(0,im.offsetHeight-hs.clientHeight);
+    let wait=4200;
+    if(delta>8 && !RM){
+      const dur=Math.max(3.5,delta/70);
+      setTimeout(()=>{im.style.transition=`transform ${dur}s cubic-bezier(.45,0,.2,1)`; im.style.transform=`translateY(${-delta}px)`;},900);
+      wait=900+dur*1000+1600;
+    }
+    hT=setTimeout(()=>showHaiba((hi+1)%HAIBA.length),wait);
+  };
+  im.complete?go():im.onload=go;
+}
+function showYafa(i){
+  clearTimeout(yT); yi=i;
+  yA.querySelectorAll('.slide').forEach((s,k)=>s.classList.toggle('on',k===i));
+  yB.querySelectorAll('.slide').forEach((s,k)=>s.classList.toggle('on',k===i));
+  document.querySelectorAll('#yafaDots button').forEach((b,k)=>b.classList.toggle('on',k===i));
+  updateCaps();
+  yT=setTimeout(()=>showYafa((yi+1)%YAFA.length),3600);
+}
+
+/* lightbox */
+const lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'), lbCap=document.getElementById('lbCap');
+let lbList=[], lbCaps='', lbI=0;
+function openLB(list,caps,i,phone){lbList=list;lbCaps=caps;lbI=i;lb.classList.toggle('phone-mode',!!phone);lb.classList.add('open');showLB();document.getElementById('lbClose').focus();clearTimeout(hT);clearTimeout(yT);}
+function showLB(){lbImg.src=IMG[lbList[lbI]]; lbImg.alt=T[lbCaps][lang][lbI]; lbCap.textContent=`${T[lbCaps][lang][lbI]} · ${lbI+1}/${lbList.length}`; lbImg.style.animation='none'; lbImg.offsetHeight; lbImg.style.animation='';lb.querySelector('.lb-body').scrollTop=0;}
+function closeLB(){lb.classList.remove('open'); showHaiba(hi); showYafa(yi);}
+document.getElementById('lbClose').onclick=closeLB;
+document.getElementById('lbPrev').onclick=()=>{lbI=(lbI-1+lbList.length)%lbList.length;showLB();};
+document.getElementById('lbNext').onclick=()=>{lbI=(lbI+1)%lbList.length;showLB();};
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb-body'))closeLB();});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return; if(e.key==='Escape')closeLB(); const rtl=root.dir==='rtl'; if(e.key==='ArrowRight')(rtl?document.getElementById('lbPrev'):document.getElementById('lbNext')).click(); if(e.key==='ArrowLeft')(rtl?document.getElementById('lbNext'):document.getElementById('lbPrev')).click();});
+const act=(el,fn)=>{el.addEventListener('click',fn); el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn();}});};
+act(hs,()=>openLB(HAIBA,'h_caps',hi));
+act(document.getElementById('yafaA'),()=>openLB(YAFA,'y_caps',yi,true));
+act(document.getElementById('yafaB'),()=>openLB([...YAFA.slice(1),YAFA[0]],'y_caps',yi,true));
+
+/* ================= sky canvas ================= */
+(function(){
+  const c=document.getElementById('sky'), x=c.getContext('2d'); let W,H,P=[],mouse={x:-999,y:-999},dpr=Math.min(2,devicePixelRatio||1),run=true;
+  function size(){W=c.width=innerWidth*dpr;H=c.height=innerHeight*dpr;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';
+    const n=Math.round(Math.min(LITE?40:110,innerWidth*innerHeight/(LITE?30000:14000))); P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25*dpr,vy:(Math.random()-.5)*.25*dpr,r:(Math.random()*1.6+.4)*dpr,t:Math.random()<.25}));}
+  size(); addEventListener('resize',size);
+  addEventListener('pointermove',e=>{mouse.x=e.clientX*dpr;mouse.y=e.clientY*dpr;},{passive:true});
+  document.addEventListener('visibilitychange',()=>{run=!document.hidden; if(run) requestAnimationFrame(loop);});
+  function col(){const s=getComputedStyle(root);return [s.getPropertyValue('--gold').trim(),s.getPropertyValue('--teal').trim()];}
+  let cols=col(); new MutationObserver(()=>cols=col()).observe(root,{attributes:true,attributeFilter:['data-theme']});
+  const D=130*dpr;
+  function loop(){
+    if(!run) return;
+    x.clearRect(0,0,W,H);
+    for(const p of P){
+      if(!RM){p.x+=p.vx;p.y+=p.vy;}
+      if(p.x<0||p.x>W)p.vx*=-1; if(p.y<0||p.y>H)p.vy*=-1;
+      const dx=mouse.x-p.x,dy=mouse.y-p.y,dd=Math.hypot(dx,dy);
+      if(dd<180*dpr&&!RM){p.x+=dx*.004;p.y+=dy*.004;}
+      x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fillStyle=p.t?cols[1]:cols[0];x.globalAlpha=.75;x.fill();
+    }
+    x.lineWidth=.6*dpr;
+    for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){
+      const a=P[i],b=P[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+      if(d<D){x.globalAlpha=(1-d/D)*.28;x.strokeStyle=a.t?cols[1]:cols[0];x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();}
+    }
+    x.globalAlpha=1;
+    if(!RM && !LITE) requestAnimationFrame(loop);
+  }
+  loop(); addEventListener('resize',()=>{ if(RM||LITE) loop(); });
+})();
+
+/* small network canvases on research cards */
+document.querySelectorAll('canvas.net').forEach(c=>{
+  const x=c.getContext('2d'); let W,H,N=[];
+  function size(){const r=c.getBoundingClientRect();W=c.width=r.width;H=c.height=r.height;N=Array.from({length:18},()=>({x:Math.random()*W,y:Math.random()*H,a:Math.random()*6.28}));}
+  size(); addEventListener('resize',size);
+  (function f(t){
+    x.clearRect(0,0,W,H); const s=getComputedStyle(root), g=s.getPropertyValue('--teal').trim();
+    N.forEach((p,i)=>{p.a+=.004; const px=p.x+Math.cos(p.a+i)*14, py=p.y+Math.sin(p.a*1.3+i)*14; p.px=px;p.py=py; x.fillStyle=g; x.globalAlpha=.5; x.beginPath(); x.arc(px,py,2,0,7); x.fill();});
+    x.strokeStyle=g; for(let i=0;i<N.length;i++)for(let j=i+1;j<N.length;j++){const d=Math.hypot(N[i].px-N[j].px,N[i].py-N[j].py); if(d<120){x.globalAlpha=(1-d/120)*.35;x.beginPath();x.moveTo(N[i].px,N[i].py);x.lineTo(N[j].px,N[j].py);x.stroke();}}
+    if(!RM && !LITE) requestAnimationFrame(f);
+  })();
+});
+
+/* ================= scroll effects ================= */
+const nav=document.getElementById('nav'), prog=document.getElementById('progress'), rail=document.getElementById('rail');
+let lastY=0;
+function onScroll(){
+  const y=scrollY, h=document.documentElement.scrollHeight-innerHeight;
+  prog.style.transform=`scaleX(${h>0?y/h:0})`;
+  nav.classList.toggle('hide', y>lastY && y>400 && !document.getElementById('links').classList.contains('open'));
+  lastY=y;
+  const tl=document.getElementById('tl').getBoundingClientRect();
+  const p=Math.min(1,Math.max(0,(innerHeight*.7-tl.top)/tl.height)); rail.style.setProperty('--p',p);
+  litUpdate();
+  let cur=''; document.querySelectorAll('main section[id]').forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.4) cur=s.id;});
+  document.querySelectorAll('#links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+}
+addEventListener('scroll',onScroll,{passive:true});
+function litUpdate(){
+  const sec=document.getElementById('statement'); if(!sec) return; const words=sec.querySelectorAll('.lit span');
+  if(RM){words.forEach(w=>w.classList.add('on'));return;}
+  const r=sec.getBoundingClientRect(); const p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height*.9)));
+  const n=Math.round(p*words.length*1.15); words.forEach((w,i)=>w.classList.toggle('on',i<n));
+}
+
+/* ================= controls ================= */
+function setTheme(t,e){
+  const apply=()=>{theme=t; root.setAttribute('data-theme',t); try{localStorage.setItem('os-theme',t);}catch(_){}
+    document.getElementById('icoSun').style.display=t==='dark'?'':'none'; document.getElementById('icoMoon').style.display=t==='dark'?'none':'';};
+  if(document.startViewTransition && !RM && e){
+    const x=e.clientX,y=e.clientY,r=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y));
+    const vt=document.startViewTransition(apply);
+    vt.ready.then(()=>document.documentElement.animate({clipPath:[`circle(0 at ${x}px ${y}px)`,`circle(${r}px at ${x}px ${y}px)`]},{duration:700,easing:'cubic-bezier(.7,0,.2,1)',pseudoElement:'::view-transition-new(root)'})).catch(()=>{});
+  } else apply();
+}
+document.getElementById('themeBtn').addEventListener('click',e=>setTheme(theme==='dark'?'light':'dark',e));
+setTheme(theme);
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{
+  if(b.dataset.lang===lang) return;
+  lang=b.dataset.lang; try{localStorage.setItem('os-lang',lang);}catch(_){}
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b)); positionPill();
+  document.body.classList.add('swapping');
+  setTimeout(()=>{render(); requestAnimationFrame(()=>document.body.classList.remove('swapping')); onScroll();},260);
+}));
+const links=document.getElementById('links');
+document.getElementById('menuBtn').onclick=()=>links.classList.toggle('open');
+links.addEventListener('click',e=>{if(e.target.tagName==='A') links.classList.remove('open');});
+function setTrack(t){
+  if(t===track) return; track=t;
+  document.body.classList.add('swapping');
+  setTimeout(()=>{render(); requestAnimationFrame(()=>document.body.classList.remove('swapping')); onScroll();
+    const f=document.getElementById('focus'); if(f.getBoundingClientRect().top<0) f.scrollIntoView({block:'start'});},220);
+}
+document.getElementById('copyTrack').onclick=async()=>{
+  const url=location.href.split('#')[0]+'#'+lang+(track!=='all'?'-'+track:'');
+  const t=document.getElementById('toast');
+  try{await navigator.clipboard.writeText(url); t.textContent=T.link_copied[lang];}catch(_){t.textContent=url;}
+  t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2600);
+};
+let fmode='msg';
+function setFormMode(m){
+  fmode=m; const f=document.getElementById('cform'); f.classList.toggle('project',m==='project');
+  document.querySelectorAll('#fMode button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===m));
+  document.getElementById('fTitle').textContent = m==='project'?T.f_title2[lang]:T.f_title[lang];
+  document.getElementById('fMsgL').textContent = m==='project'?T.f_msg2[lang]:T.f_msg[lang];
+  if(typeof syncLinks==='function') syncLinks();
+}
+function requestService(k){
+  setFormMode('project'); document.getElementById('fType').value=String(k); syncLinks();
+  document.getElementById('contact').scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});
+  setTimeout(()=>document.getElementById('fMsg').focus({preventScroll:true}),700);
+}
+function composeMsg(){
+  const n=document.getElementById('fName').value.trim(), o=document.getElementById('fOrg').value.trim(), m=document.getElementById('fMsg').value.trim();
+  const from=[n,o].filter(Boolean).join(' – ');
+  let extra='';
+  if(fmode==='project'){const ts=document.getElementById('fType'), bs=document.getElementById('fBudget');
+    extra=`${T.f_lbl_type[lang]}: ${ts.options[ts.selectedIndex]?.text||''}\n${T.f_budget[lang]}: ${bs.options[bs.selectedIndex]?.text||''}\n\n`;}
+  const subj0 = fmode==='project'?(lang==='ar'?'طلب مشروع من الموقع':lang==='fr'?'Demande de projet depuis le site':'Project request from your website'):(lang==='ar'?'رسالة من الموقع':lang==='fr'?'Message depuis le site':'Message from your website');
+  return {m, text:`${T.f_hi[lang]}\n\n${extra}${m}${from?`\n\n${T.f_from[lang]}: ${from}`:''}`, subj:subj0+(o?` – ${o}`:'')};
+}
+function syncLinks(){const c=composeMsg();
+  document.getElementById('sendWa').href='https://wa.me/972595522655?text='+encodeURIComponent(c.text);
+  document.getElementById('sendMail').href='mailto:odayseyam@gmail.com?subject='+encodeURIComponent(c.subj)+'&body='+encodeURIComponent(c.text);}
+['fName','fOrg','fMsg','fType','fBudget'].forEach(id=>document.getElementById(id).addEventListener('input',syncLinks));
+document.querySelectorAll('#fMode button').forEach(b=>b.addEventListener('click',()=>setFormMode(b.dataset.m)));
+['sendWa','sendMail'].forEach(id=>document.getElementById(id).addEventListener('click',e=>{
+  if(!composeMsg().m){e.preventDefault(); const t=document.getElementById('toast'); t.textContent=T.f_empty[lang]; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000); document.getElementById('fMsg').focus();}
+}));
+document.getElementById('cform').addEventListener('submit',e=>e.preventDefault());
+document.getElementById('copyMail').onclick=async()=>{
+  const t=document.getElementById('toast');
+  try{await navigator.clipboard.writeText('odayseyam@gmail.com'); t.textContent=T.copied[lang];}
+  catch(_){t.textContent='odayseyam@gmail.com';}
+  t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200);
+};
+
+/* ================= boot ================= */
+document.querySelectorAll('.gauge .fg').forEach(c=>c.style.strokeDashoffset = 226*(1-parseFloat(c.dataset.v)/100));
+render();
+showHaiba(0); showYafa(0); onScroll();
+addEventListener('resize',()=>{positionPill();});
+const hideLoader=()=>document.getElementById('loader').classList.add('done');
+if(RM) hideLoader(); else { addEventListener('load',()=>setTimeout(hideLoader,700)); setTimeout(hideLoader,1800); }
+</script>
+</body>
+</html>
