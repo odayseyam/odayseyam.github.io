@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://odayseyam.github.io/sitemap.xml
