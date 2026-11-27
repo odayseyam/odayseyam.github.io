@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://odayseyam.github.io/</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://odayseyam.github.io/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odayseyam.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://odayseyam.github.io/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odayseyam.github.io/"/>
+  </url>
+  <url>
+    <loc>https://odayseyam.github.io/?lang=ar</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://odayseyam.github.io/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odayseyam.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://odayseyam.github.io/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odayseyam.github.io/"/>
+  </url>
+  <url>
+    <loc>https://odayseyam.github.io/?lang=en</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://odayseyam.github.io/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odayseyam.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://odayseyam.github.io/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odayseyam.github.io/"/>
+  </url>
+  <url>
+    <loc>https://odayseyam.github.io/?lang=fr</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://odayseyam.github.io/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odayseyam.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://odayseyam.github.io/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odayseyam.github.io/"/>
   </url>
 </urlset>
