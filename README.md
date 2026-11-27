@@ -20,9 +20,14 @@ No build step, no framework: plain HTML, CSS and JavaScript in `index.html`.
   Change them if the site is hosted on another domain (e.g. Cloudflare Pages or a custom domain).
 
 ## Behaviour
-- **Language:** opens in `#ar`, `#en` or `#fr` if the link has that hash; otherwise the visitor's last choice;
-  otherwise the browser language (Arabic → ar, French → fr, anything else → en).
-  Share language-specific links like `https://odayseyam.github.io/#en`.
+- **Language:** opens in `#ar`, `#en` or `#fr` if the link has that hash; otherwise `?lang=ar|en|fr` in the address;
+  otherwise the visitor's last choice; otherwise the browser language (Arabic → ar, French → fr, anything else → en).
+  Switching language updates `?lang=` (and a language in the hash, if any) in the address bar.
+  Share language-specific links like `https://odayseyam.github.io/?lang=en` (old `#en` links still work).
+- **SEO:** Google ignores `#` hashes, so each language has its own indexable address: `/?lang=ar`, `/?lang=en`, `/?lang=fr`.
+  `hreflang` links in `<head>` and in `sitemap.xml` tie them together (`/` is `x-default`).
+  The title, meta description and canonical link are set per language in `render()` / `setSeo()`.
+  If the site moves to another domain, also update `SITE` in the script, the `hreflang` links and `sitemap.xml`.
 - **Lite mode:** on slow connections (2G/3G, Data Saver), low-memory or low-core devices, or reduced-motion,
   the `lite` class is added to `<html>`: background animation is drawn once, orbit/sweep effects and blur are off.
 
